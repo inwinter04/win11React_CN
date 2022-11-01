@@ -182,7 +182,7 @@ export const Explorer = () => {
         app={wnapp.action}
         icon={wnapp.icon}
         size={wnapp.size}
-        name="File Explorer"
+        name="文件资源管理器"
       />
       <div className="windowScreen flex flex-col">
         <Ribbon />

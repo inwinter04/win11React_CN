@@ -35,7 +35,7 @@ const apps = [
     action: "TASKMANAGER",
   },
   {
-    name: "File Explorer",
+    name: "文件资源管理器",
     icon: "explorer",
     type: "app",
     action: "EXPLORER",
