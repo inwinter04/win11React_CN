@@ -41,7 +41,7 @@ const apps = [
     action: "EXPLORER",
   },
   {
-    name: "Browser",
+    name: "Microsoft Edge",
     icon: "edge",
     type: "app",
     action: "MSEDGE",
@@ -292,12 +292,6 @@ const apps = [
     type: "action",
     action: "EXTERNAL",
     payload: "https://blueedge.me/unescape",
-  },
-  {
-    name: "Discord",
-    icon: "discord",
-    type: "app",
-    action: "DISCORD",
   },
 ];
 
