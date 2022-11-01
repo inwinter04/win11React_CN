@@ -124,7 +124,7 @@ const defState = {
         type: "hr",
       },
       {
-        name: "Next desktop background",
+        name: "下一个桌面背景",
         action: "WALLNEXT",
       },
       {
@@ -142,15 +142,15 @@ const defState = {
     ],
     task: [
       {
-        name: "Align icons",
+        name: "排列图标",
         opts: [
           {
-            name: "Left",
+            name: "居左",
             action: "changeTaskAlign",
             payload: "left",
           },
           {
-            name: "Center",
+            name: "居中",
             action: "changeTaskAlign",
             payload: "center",
             dot: true,
@@ -161,30 +161,30 @@ const defState = {
         type: "hr",
       },
       {
-        name: "Search",
+        name: "搜索",
         opts: [
           {
-            name: "Show",
+            name: "显示",
             action: "TASKSRCH",
             payload: true,
           },
           {
-            name: "Hide",
+            name: "隐藏",
             action: "TASKSRCH",
             payload: false,
           },
         ],
       },
       {
-        name: "Widgets",
+        name: "小部件",
         opts: [
           {
-            name: "Show",
+            name: "显示",
             action: "TASKWIDG",
             payload: true,
           },
           {
-            name: "Hide",
+            name: "隐藏",
             action: "TASKWIDG",
             payload: false,
           },
@@ -194,52 +194,52 @@ const defState = {
         type: "hr",
       },
       {
-        name: "Show Desktop",
+        name: "显示桌面",
         action: "SHOWDSK",
       },
     ],
     app: [
       {
-        name: "Open",
+        name: "打开",
         action: "performApp",
         payload: "open",
       },
       {
-        name: "Run as administrator",
+        name: "以管理员身份运行",
         action: "performApp",
         payload: "open",
         icon: "win/shield",
       },
       {
-        name: "Open file location",
+        name: "打开文件所在的位置",
         dsb: true,
       },
       {
-        name: "Unpin from start",
+        name: "从开始菜单取消固定",
         dsb: true,
       },
       {
-        name: "Compress to Zip file",
+        name: "压缩为 ZIP 文件",
         dsb: true,
       },
       {
-        name: "Copy as path",
+        name: "复制文件地址",
         dsb: true,
       },
       {
-        name: "Properties",
+        name: "属性",
         dsb: true,
       },
       {
         type: "hr",
       },
       {
-        name: "Delete shortcut",
+        name: "删除快捷方式",
         action: "performApp",
         payload: "delshort",
       },
       {
-        name: "Delete",
+        name: "删除",
         action: "delApp",
         payload: "delete",
       },
