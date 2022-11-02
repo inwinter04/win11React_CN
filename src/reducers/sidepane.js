@@ -31,7 +31,7 @@ const defState = {
     {
       ui: true,
       src: "sun",
-      name: "主题",
+      name: "背景主题",
       state: "person.theme",
       action: "changeTheme",
     },

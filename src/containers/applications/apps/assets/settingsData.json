@@ -1,113 +1,113 @@
 {
-  "System": [
+  "系统": [
     {
       "type": "sysTop"
     },
     {
       "type": "tile",
-      "name": "Display",
-      "desc": "Monitor, brightness, night light, display profile",
+      "name": "屏幕",
+      "desc": "显示器、亮度、夜间模式、显示器配置文件",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Sound",
-      "desc": "Volume levels, output, input, sound devices",
+      "name": "声音",
+      "desc": "音量、输出、输入、声音设备",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Notifications",
-      "desc": "Alert from apps and system",
+      "name": "通知",
+      "desc": "来自应用和系统的警报",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Focus Assist",
-      "desc": "Notifications, automatic rules",
+      "name": "专注助手",
+      "desc": "通知、自动规则",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Power & battery",
-      "desc": "Sleep, battery usage, battery saver",
+      "name": "电源和电池",
+      "desc": "睡眠、电池使用情况、节电模式",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Storage",
-      "desc": "Storage space, drives, configuration rules",
+      "name": "存储",
+      "desc": "存储空间、驱动器、配置规则",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Nearby sharing",
-      "desc": "Discoverability, received files location",
+      "name": "就近分享",
+      "desc": "可发现性、收到文件的位置",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Multi-tasking",
-      "desc": "Snap windows, desktops, task switching",
+      "name": "多任务处理",
+      "desc": "贴靠窗口、桌面、任务切换",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Activation",
-      "desc": "Activation state, subscription, product key",
+      "name": "激活",
+      "desc": "激活状态、订阅、产品密钥",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Troubleshoot",
-      "desc": "Recommended troubleshooters, preferences, history",
+      "name": "疑难解答",
+      "desc": "建议的疑难解答、首选项和历史记录",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Recovery",
-      "desc": "Reset, advanced start-up, go back",
+      "name": "恢复",
+      "desc": "重置、高级启动、返回",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Projecting to this PC",
-      "desc": "Permissions, pairing PIN, discoverability",
+      "name": "投影到此电脑",
+      "desc": "权限、配对PIN、可发现性",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Remote Desktop",
-      "desc": "Remote Desktop users, connection permissions",
+      "name": "远程桌面",
+      "desc": "远程桌面用户、连接权限",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Clipboard",
-      "desc": "Cut and copy history, sync, clear",
+      "name": "剪切板",
+      "desc": "剪切和复制历史记录、同步、清除",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "About",
-      "desc": "Device specifications, rename PC, Windows specifications",
+      "name": "系统信息",
+      "desc": "系统规格、重命名电脑、Windows 规格",
       "icon": ""
     }
   ],
-  "Bluetooth & devices": [
+  "蓝牙和其他设备": [
     {
       "type": "tile square",
-      "name": "Add device",
+      "name": "添加设备",
       "icon": ""
     },
     {
       "type": "tile thin-blue",
-      "name": "View more devices"
+      "name": "显示更多设备"
     },
     {
       "type": "tile",
-      "name": "Bluetooth",
-      "desc": "Bluetooth is turned off",
+      "name": "蓝牙",
+      "desc": "蓝牙已关闭",
       "icon": ""
     },
     {
@@ -115,639 +115,627 @@
     },
     {
       "type": "tile",
-      "name": "Devices",
-      "desc": "Mouse, keyboard, pen, audio, displays and docks, other devices",
+      "name": "设备",
+      "desc": "鼠标、键盘、触笔、音频、显示器和扩展坞、其他设备",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Printers & scanners",
-      "desc": "Preferences, troubleshoot",
+      "name": "打印机和扫描仪",
+      "desc": "首选项、疑难解答",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Your Phone",
-      "desc": "Instantly access your Android device's photos, texts and more",
+      "name": "手机连接",
+      "desc": "立即获取 Android 设备的照片、短信及其他",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Cameras",
-      "desc": "Connected cameras, default image settings",
+      "name": "摄像头",
+      "desc": "连接的摄像头、默认图像设置",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Mouse",
-      "desc": "Buttons, mouse pointer speed, scrolling",
+      "name": "鼠标",
+      "desc": "按钮、鼠标指针速度、滚动",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Touchpad",
-      "desc": "Taps, gestures, scrolling, zooming",
+      "name": "触控板",
+      "desc": "点击、手势、滚动、缩放",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Pen & Windows Ink",
-      "desc": "Right-handed or left-handed, pen button shortcuts, handwriting",
+      "name": "笔和 Windows Ink",
+      "desc": "右手或左手、笔按钮快捷方式、手写",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "AutoPlay",
-      "desc": "Defaults for removable drives and memory cards",
+      "name": "自动播放",
+      "desc": "可移动驱动器和内存的默认设置",
       "icon": ""
     },
     {
       "type": "tile",
       "name": "USB",
-      "desc": "Notifications, USB battery saver, mobile device preferences",
+      "desc": "通知、USB节电模式、移动设备首选项",
       "icon": ""
     }
   ],
-  "Network & internet": [
+  "网络和 Internet": [
     {
       "type": "netTop"
     },
     {
       "type": "tile",
       "name": "WiFi",
-      "desc": "Connect, manage known networks, metered network",
+      "desc": "连接、管理已知网络、按流量计费的网络",
       "icon": ""
     },
     {
       "type": "tile",
       "name": "VPN",
-      "desc": "Add, connect, manage",
+      "desc": "添加、连接、管理",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Mobile hotspot",
-      "desc": "Share your internet connection",
+      "name": "移动热点",
+      "desc": "共享 Internet 连接",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Flight mode",
-      "desc": "Stop all wireless communication",
+      "name": "飞行模式",
+      "desc": "停止所有无线通信",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Proxy",
-      "desc": "Proxy server for WiFi and Ethernet connections",
+      "name": "代理",
+      "desc": "用于 WiFi 和以太网连接的代理服务器",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Dial-up",
-      "desc": "Set up a dial-up internet connection",
+      "name": "拨号",
+      "desc": "设置拨号 Internet 连接",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Advanced network settings",
-      "desc": "View all network adapters, network reset",
+      "name": "高级网络设置",
+      "desc": "查看所有网络适配器、网络重置",
       "icon": ""
     }
   ],
-  "Personalisation": [
+  "个性化": [
     {
       "type": "personaliseTop"
     },
     {
       "type": "tile",
-      "name": "Background",
-      "desc": "Background image, colour, slideshow",
+      "name": "背景",
+      "desc": "背景图像、颜色、幻灯片",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Colours",
-      "desc": "Accent colours, transparency effects, colour theme",
+      "name": "颜色",
+      "desc": "主题色、透明效果、颜色主题",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Themes",
-      "desc": "Install, create, manage",
+      "name": "主题",
+      "desc": "安装、创建、管理",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Lock screen",
-      "desc": "Lock screen images, apps, animations",
+      "name": "锁屏界面",
+      "desc": "锁定屏幕图像、应用和动画",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Touch keyboard",
-      "desc": "Theme, size",
+      "name": "触摸键盘",
+      "desc": "主题、大小",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Start",
-      "desc": "Recent apps and items, folders",
+      "name": "开始",
+      "desc": "最近使用的应用和项目、文件夹",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Taskbar",
-      "desc": "Taskbar behaviours, system pins",
+      "name": "任务栏",
+      "desc": "任务栏行为，系统固定项",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Fonts",
-      "desc": "Install, manage",
+      "name": "字体",
+      "desc": "安装、管理",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Device usage",
-      "desc": "Select all the ways you plan to use your device to get personalised tips, ads and recommendations within Microsoft experiences",
+      "name": "设备使用情况",
+      "desc": "选择你计划使用设备的所有方法，以在 Microsoft 体验中获取个性化的提示、广告和建议。",
       "icon": ""
     }
   ],
   "Apps": [
     {
       "type": "tile",
-      "name": "Apps & features",
-      "desc": "Installed apps, app execution aliases",
+      "name": "应用和功能",
+      "desc": "已安装的应用，应用执行别名",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Default apps",
-      "desc": "Defaults for file and link types, other defaults",
+      "name": "默认应用",
+      "desc": "根据文件和链接种类设置的默认应用，其他默认应用",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Offline maps",
-      "desc": "Downloads, storage location, map updates",
+      "name": "离线地图",
+      "desc": "下载、存储位置、地图更新",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Optional features",
-      "desc": "Extra functionality for your device",
+      "name": "可选功能",
+      "desc": "你的设备的额外功能",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Apps for websites",
-      "desc": "Websites that can open in an app instead of a browser",
+      "name": "可打开网站的应用",
+      "desc": "可在应用而不是浏览器中打开的网站",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Video playback",
-      "desc": "Video adjustments, HDR streaming, battery options",
+      "name": "视频播放",
+      "desc": "视频调整、HRD 流式处理、电池选项",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Startup",
-      "desc": "Apps that start automatically when you sign in",
+      "name": "启动",
+      "desc": "登录时自动启动的应用程序",
       "icon": ""
     }
   ],
-  "Accounts": [
+  "账户": [
     {
       "type": "accountsTop"
     },
     {
       "type": "tile",
-      "name": "Your Microsoft account",
-      "desc": "Subscriptions, rewards and more",
+      "name": "你的 Microsoft 账户",
+      "desc": "订阅、奖励等",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Your info",
-      "desc": "Accounts used by email, calendar, and contacts",
+      "name": "账户信息",
+      "desc": "电子邮件、日历和联系人使用的账户",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Sign-in options",
-      "desc": "Windows Hello, security key, password, dynamic lock",
+      "name": "登录选项",
+      "desc": "Windows Hello、安全密钥、密码、动态锁",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Email & accounts",
-      "desc": "Accounts used by email, calendar, and contacts",
+      "name": "电子邮件和账户",
+      "desc": "电子邮件、日历和联系人使用的账户",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Family",
-      "desc": "Manage your family group, edit account types and device permissions",
+      "name": "家庭和其他用户",
+      "desc": "设备访问权限、工作或学校用户、展台分配的访问权限",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Windows backup",
-      "desc": "Back up your files, apps, preferences to restore them across devices",
+      "name": "Windows 备份",
+      "desc": "备份文件、应用和首选项、以便跨设备将其还原",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Other users",
-      "desc": "Device access, work or school user, kiosk assigned access",
-      "icon": ""
-    },
-    {
-      "type": "tile",
-      "name": "Access work or school",
-      "desc": "Organisation resources like email, apps, and network",
+      "name": "连接工作或学校账户",
+      "desc": "电子邮件、应用和网络等组织资源",
       "icon": ""
     }
   ],
-  "Time & language": [
+  "时间和语言": [
     {
       "type": "timeTop"
     },
     {
       "type": "tile",
-      "name": "Date & time",
-      "desc": "Time zones, automatic clock settings, calendar display",
+      "name": "日期和时间",
+      "desc": "时区、自动时钟设置、日历显示",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Language & region",
-      "desc": "Windows and some apps format dates and times based on your region",
+      "name": "语言和区域",
+      "desc": "根据你所在的区域设置 Windows 和某些应用的日期和时间格式",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Typing",
-      "desc": "Touch keyboard, text suggestions, preferences",
+      "name": "输入",
+      "desc": "触摸键盘、文本建议、首选项",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Speech",
-      "desc": "Speech language, speech recognition microphone setup, voices",
+      "name": "语音",
+      "desc": "语音语言、语音识别麦克风设置、声音",
       "icon": ""
     },
     {
       "type": "langSwitcher"
     }
   ],
-  "Gaming": [
+  "游戏": [
     {
       "type": "tile",
       "name": "Xbox Game Bar",
-      "desc": "Controller and keyboard shortcuts",
+      "desc": "控制器和键盘快捷方式",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Captures",
-      "desc": "Save location, recording preferences",
+      "name": "摄影",
+      "desc": "保存位置，录制首选项",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Game Mode",
-      "desc": "Optimize your PC for play",
+      "name": "游戏模式",
+      "desc": "优化电脑以便畅玩",
       "icon": ""
     }
   ],
-  "Accessibility": [
+  "辅助功能": [
     {
       "type": "subHeading",
-      "name": "Vision"
+      "name": "视觉"
     },
     {
       "type": "tile",
-      "name": "Text size",
-      "desc": "Text size that appears throughout Windows and your apps",
+      "name": "文本大小",
+      "desc": "在整个 Windows 和应用中显示的文本大小",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Visual effects",
-      "desc": "Scroll bars, transparency, animations, notification timeout",
+      "name": "视觉效果",
+      "desc": "滚动条、透明度、动画、通知超时",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Mouse pointer and touch",
-      "desc": "Mouse pointer colour, size",
+      "name": "鼠标指针和触控",
+      "desc": "鼠标指针颜色、大小",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Text cursor",
-      "desc": "Appearance and thickness, text cursor indicator",
+      "name": "文本光标",
+      "desc": "外观和粗细、文本光标指示器",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Magnifier",
-      "desc": "Magnifier reading, zoom increment",
-      "icon": ""
-    },
-    {
-      "type": "tile",
-      "name": "Colour filters",
-      "desc": "Colour-blindness filters, grey scale, inverted",
+      "name": "颜色滤镜",
+      "desc": "色盲滤镜、灰度、反转",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Contrast themes",
-      "desc": "Colours theme for low vision, light sensitivity",
+      "name": "对比度主题",
+      "desc": "弱视色彩主题、光敏度",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Narrator",
-      "desc": "Voice, verbosity, keyboard, braille",
+      "name": "讲述人",
+      "desc": "声音、详细信息、键盘、盲文",
       "icon": ""
     },
     {
       "type": "subHeading",
-      "name": "Hearing"
+      "name": "听力"
     },
     {
       "type": "tile",
-      "name": "Audio",
-      "desc": "Mono audio, audio notifications",
+      "name": "音频",
+      "desc": "单声道音频、音频通知",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Captions",
-      "desc": "Styles",
+      "name": "字母",
+      "desc": "样式、实时字幕",
       "icon": ""
     },
     {
       "type": "subHeading",
-      "name": "Interaction"
+      "name": "聆听"
     },
     {
       "type": "tile",
-      "name": "Speech",
-      "desc": "Windows Speech Recognition, voice typing",
+      "name": "语音",
+      "desc": "语音访问、语音输入、Windows 语音识别",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Keyboard",
-      "desc": "Sticky, Filter, and Toggle keys, on-screen keyboard",
+      "name": "键盘",
+      "desc": "粘滞键、筛选建和切换键，屏幕键盘",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Mouse",
-      "desc": "Mouse keys, speed, acceleration",
+      "name": "鼠标",
+      "desc": "鼠标键、速度、加速",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Eye control",
-      "desc": "Eye tracker, text-to-speech",
+      "name": "目视控制",
+      "desc": "眼动追踪仪，文本到语音切换",
       "icon": ""
     }
   ],
-  "Privacy & security": [
+  "隐私和安全性": [
     {
       "type": "subHeading",
-      "name": "Security"
+      "name": "安全性"
     },
     {
       "type": "tile",
-      "name": "Windows Security",
-      "desc": "Antivirus, browser, firewall, and network protection for your device",
+      "name": "Windows 安全中心",
+      "desc": "适用于你的设备的防病毒、浏览器、防火墙和网络保护",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Find my device",
-      "desc": "Track your device if you think you've lost it",
+      "name": "查找我的设备",
+      "desc": "如果认为设备已丢失，请跟踪设备",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "For developers",
-      "desc": "These settings are intended for development use only",
+      "name": "开发者选项",
+      "desc": "这些设置仅供开发使用",
       "icon": ""
     },
     {
       "type": "subHeading",
-      "name": "Windows permissions"
+      "name": "Windows 权限"
     },
     {
       "type": "tile",
-      "name": "General",
-      "desc": "Advertising ID, local content, app launches, settings suggestions, productivity tools",
+      "name": "常规",
+      "desc": "广告ID,本地内容.应用启动, 设置建议，生产力工具",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Speech",
-      "desc": "Online speech recognition for dictation and other voice-based interactions",
+      "name": "语音",
+      "desc": "用于听写和其他基于语音的交互的在线语音识别",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Inking & typing personalisation",
-      "desc": "Personal dictionary, words in your dictionary",
+      "name": "墨迹书写和键入个性化",
+      "desc": "个人词典，词典中的字词",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Diagnostic & feedback",
-      "desc": "Diagnostic data, inking and typing data, tailored experiences, feedback frequency",
+      "name": "诊断和反馈",
+      "desc": "诊断数据，虽迹书写和键入数据，定制体验，反馈频率",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Activity history",
-      "desc": "Options for getting more from your activity history across devices and accounts",
+      "name": "活动历史记录",
+      "desc": "从你的跨设备和账户的活动历史记录中获得更多搜索结果的选项",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Search permissions",
-      "desc": "SafeSearch, cloud content search, search history",
+      "name": "搜索权限",
+      "desc": "安全搜系、云内容搜索、搜索历史记录",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Searching Windows",
-      "desc": "Search indexing for faster results, Find My Files, folders excluded from search",
+      "name": "搜索 Windows",
+      "desc": "可更快得到搜系结果的搜索索引。“查找我的文件”。从接索中排除的文件夹",
       "icon": ""
     },
     {
       "type": "subHeading",
-      "name": "App permissions"
+      "name": "应用权限"
     },
     {
       "type": "tile",
-      "name": "Location",
+      "name": "位置",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Camera",
+      "name": "摄像头",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Microphone",
+      "name": "麦克风",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Voice activation",
+      "name": "语音激活",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Notification",
+      "name": "通知",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Account info",
+      "name": "账户信息",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Contact",
+      "name": "联系人",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Calendar",
+      "name": "日历",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Phone calls",
+      "name": "电话呼叫",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Call history",
+      "name": "通话记录",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Email",
+      "name": "电子邮件",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Tasks",
+      "name": "任务",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Messaging",
+      "name": "消息",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Radios",
+      "name": "无线收发器",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Other devices",
+      "name": "其他设备",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "App diagnostics",
+      "name": "应用诊断",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Automatic file downloads",
+      "name": "自动文件下载",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Documents",
+      "name": "文档",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Downloads folder",
+      "name": "下载文件夹",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Music library",
+      "name": "音乐库",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Pictures",
+      "name": "图片",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Videos",
+      "name": "视频",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "File system",
+      "name": "文件系统",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Screenshot borders",
+      "name": "屏幕截图边框",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Screenshot and apps",
+      "name": "屏幕截图和应用",
       "icon": ""
     }
   ],
-  "Windows Update": [
+  "Windows 更新": [
     {
       "type": "updateTop"
     },
     {
       "type": "subHeading",
-      "name": "More options"
+      "name": "更多选项"
     },
     {
       "type": "tile",
-      "name": "Pause updates",
+      "name": "暂停更新",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Update history",
+      "name": "更新历史记录",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Advanced options",
-      "desc": "Delivery optimisations, optional updates, active hours, other update settings",
+      "name": "高级选项",
+      "desc": "传递优化、可选更新、活跃时间以及其他更新设置",
       "icon": ""
     },
     {
       "type": "tile",
-      "name": "Windows Insider Programme",
-      "desc": "Get preview builds of Windows to share feedback to new features and updates",
+      "name": "Windows 预览体验计划",
+      "desc": "获取 Windows 的预览版本，以分享有关新功能和更新的反馈",
       "icon": ""
     }
   ]

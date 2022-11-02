@@ -76,7 +76,7 @@
           },
           "Blue": {
             "type": "folder",
-            "name": "Blue",
+            "name": "此电脑",
             "info": {
               "spid": "%user%",
               "icon": "user"

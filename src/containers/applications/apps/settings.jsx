@@ -128,9 +128,9 @@ export const Settings = () => {
                                   className="device_img"
                                 />
                                 <div className="column_device">
-                                  <p className="device_name">Liber-V</p>
-                                  <p className="device_model">NS14A8</p>
-                                  <p className="device_rename">Rename</p>
+                                  <p className="device_name">Dell</p>
+                                  <p className="device_model">Precision 3640 Tower</p>
+                                  <p className="device_rename">重命名</p>
                                 </div>
                               </div>
                               <div className="right">
@@ -150,7 +150,7 @@ export const Settings = () => {
                                 </div>
                                 <div
                                   className="column"
-                                  onClick={() => setPage("Windows Update")}
+                                  onClick={() => setPage("Windows 更新")}
                                 >
                                   <img
                                     src="img/settings/Windows Update.webp"
@@ -158,10 +158,10 @@ export const Settings = () => {
                                     height={20}
                                   />
                                   <p>
-                                    Windows Update
+                                    Windows 更新
                                     <br />
                                     <span className="column_lower">
-                                      You're up to date
+                                      你使用的是最新版本
                                     </span>
                                   </p>
                                 </div>
@@ -179,20 +179,20 @@ export const Settings = () => {
                                 />
                                 <div>
                                   <h2 className="font-medium text-lg">WiFi</h2>
-                                  <p>Connected, secured</p>
+                                  <p>已连接</p>
                                 </div>
                               </div>
                               <div className="box">
                                 <span className="settingsIcon"></span>
                                 <div>
-                                  <h3>Properties</h3>
-                                  <p>Public network 5 Ghz</p>
+                                  <h3>属性</h3>
+                                  <p>专用网络</p>
                                 </div>
                               </div>
                               <div className="box">
                                 <span className="settingsIcon"></span>
                                 <div>
-                                  <h3>Data Usage</h3>
+                                  <h3>数据使用量</h3>
                                   <p>
                                     {Math.round(Math.random() * 100)}GB, last 30
                                     days
@@ -210,7 +210,7 @@ export const Settings = () => {
                                 alt=""
                               />
                               <div>
-                                <h3>Select a theme to apply</h3>
+                                <h3>选择要应用的主题</h3>
                                 <div className="bgBox">
                                   {wall.themes.map((e, i) => {
                                     return (
@@ -241,7 +241,7 @@ export const Settings = () => {
                               />
                               <div>
                                 <p>{userName.toUpperCase()}</p>
-                                <p>Local Account</p>
+                                <p>本地用户</p>
                                 <p>Administrator</p>
                               </div>
                             </div>
@@ -263,10 +263,9 @@ export const Settings = () => {
                             <div key={i} className="tile langSwitcherTile">
                               <span className="settingsIcon"></span>
                               <div className="tile_content">
-                                <p>Windows display language</p>
+                                <p>Windows 显示语言</p>
                                 <p className="tile_desc">
-                                  Windows features like Settings and File
-                                  Explorer will appear in this language
+                                Windows的设置和文件资源管理器等功能将以这种语言出现
                                 </p>
                               </div>
                               <LangSwitch />
@@ -282,8 +281,8 @@ export const Settings = () => {
                                   alt=""
                                 />
                                 <div>
-                                  <h2>You're up to date</h2>
-                                  <p>Last checked: Today</p>
+                                  <h2>你使用的是最新版本</h2>
+                                  <p>上次检查时间: 今天</p>
                                 </div>
                               </div>
                               <div className="right">
@@ -298,8 +297,8 @@ export const Settings = () => {
                                   }}
                                 >
                                   {updating
-                                    ? "Checking for updates..."
-                                    : "Check for updates"}
+                                    ? "检查更新..."
+                                    : "检查更新"}
                                 </div>
                               </div>
                             </div>
@@ -354,11 +353,10 @@ export const Settings = () => {
                   }}
                   className="text-2xl font-semibold"
                 >
-                  Restart required
+                  需要重新启动
                 </h1>
                 <p>
-                  Some changes will not take effect until you restart your
-                  device.
+                有些更改直到重新启动设备才会生效。
                 </p>
 
                 <div
@@ -381,7 +379,7 @@ export const Settings = () => {
                     }}
                     className="flex-1 rounded border-none hover:opacity-95"
                   >
-                    Restart now
+                    现在重启
                   </button>
                   <button
                     style={{
@@ -393,7 +391,7 @@ export const Settings = () => {
                       setUpmodalOpen(false);
                     }}
                   >
-                    Restart later
+                    稍后重启
                   </button>
                 </div>
               </div>

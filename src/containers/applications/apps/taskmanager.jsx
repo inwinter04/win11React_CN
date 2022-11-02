@@ -15,21 +15,20 @@ apps.map((e) => {
 export const Taskmanager = () => {
   const wnapp = useSelector((state) => state.apps.taskmanager);
 
-  const [tab, setTab] = useState("Processes");
+  const [tab, setTab] = useState("进程");
   const [nav, setNav] = useState("open");
 
   const tabNames = [
-    { title: "Processes", icon: "faTableCellsLarge" },
-    { title: "Performance", icon: "faWaveSquare" },
-    { title: "App history", icon: "faClockRotateLeft" },
-    { title: "Startup apps", icon: "faGaugeHigh" },
-    { title: "Users", icon: "faUser" },
-    { title: "Details", icon: "faList" },
-    { title: "Services", icon: "faPuzzlePiece" },
-    { title: "Settings", icon: "faGear" },
+    { title: "进程", icon: "faTableCellsLarge" },
+    { title: "性能", icon: "faWaveSquare" },
+    { title: "应用历史记录", icon: "faClockRotateLeft" },
+    { title: "启动", icon: "faGaugeHigh" },
+    { title: "用户", icon: "faUser" },
+    { title: "详细信息", icon: "faList" },
+    { title: "服务", icon: "faPuzzlePiece" },
   ];
 
-  const powerUsage = ["Very low", "Low", "Moderate", "High", "Very High"];
+  const powerUsage = ["非常低", "低", "中", "高", "非常高"];
 
   return (
     <div
@@ -47,7 +46,7 @@ export const Taskmanager = () => {
         app={wnapp.action}
         icon={wnapp.icon}
         size={wnapp.size}
-        name="Task Manager"
+        name="任务管理器"
       />
       <div className="windowScreen flex flex-col" data-dock="true">
         <div className="restWindow flex-grow flex flex-col">
@@ -70,19 +69,19 @@ export const Taskmanager = () => {
             <h3>{tab}</h3>
             {(() => {
               switch (tab) {
-                case "Processes":
+                case "进程":
                   return (
-                    <div className="Processes">
+                    <div className="进程">
                       <table>
                         <thead>
                           <tr>
-                            <th>Name</th>
+                            <th>名称</th>
                             <th>CPU</th>
-                            <th>Memory</th>
-                            <th>Disk</th>
-                            <th>Network</th>
+                            <th>内存</th>
+                            <th>磁盘</th>
+                            <th>网络</th>
                             <th>GPU</th>
-                            <th>Power Usage</th>
+                            <th>电源使用情况</th>
                           </tr>
                         </thead>
                         <tbody>
