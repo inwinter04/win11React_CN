@@ -147,7 +147,7 @@ export const MicroStore = () => {
         app={wnapp.action}
         icon={wnapp.icon}
         size={wnapp.size}
-        name="Store"
+        name="Microsoft Store"
       />
       <div className="windowScreen flex">
         <LazyComponent show={!wnapp.hide}>
@@ -238,7 +238,7 @@ const DownPage = ({ action, apps }) => {
             target="_blank"
             rel="noreferrer"
           >
-            Add your own app
+            添加自己的应用程序
           </a>
         </div>
       </div>

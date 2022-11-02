@@ -60,12 +60,12 @@ const apps = [
     action: "WNSTORE",
   },
   {
-    name: "Recycle Bin",
+    name: "回收站",
     icon: "bin0",
     type: "app",
   },
   {
-    name: "Blue",
+    name: "此电脑",
     icon: "win/user",
     type: "short",
   },

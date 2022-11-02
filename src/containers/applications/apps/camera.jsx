@@ -62,7 +62,7 @@ export const Camera = () => {
         app={wnapp.action}
         icon={wnapp.icon}
         size={wnapp.size}
-        name="Camera"
+        name="相机"
         invert
         bg="#060606"
       />

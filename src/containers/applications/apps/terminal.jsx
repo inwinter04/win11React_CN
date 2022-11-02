@@ -11,7 +11,7 @@ export const WnTerminal = () => {
   const [stack, setStack] = useState(["OS [Version 10.0.22000.51]", ""]);
   const [pwd, setPwd] = useState("C:\\Users\\Blue");
   const [lastCmd, setLsc] = useState(0);
-  const [wntitle, setWntitle] = useState("Terminal");
+  const [wntitle, setWntitle] = useState("命令提示符");
 
   const dispatch = useDispatch();
 
@@ -201,7 +201,7 @@ export const WnTerminal = () => {
       tmpStack = ["OS [Version 10.0.22000.51]", ""];
       dispatch({ type: wnapp.action, payload: "close" });
     } else if (type == "title") {
-      setWntitle(arg.length ? arg : "Terminal");
+      setWntitle(arg.length ? arg : "命令提示符");
     } else if (type == "hostname") {
       tmpStack.push("blue");
     } else if (type == "login") {
@@ -215,7 +215,7 @@ export const WnTerminal = () => {
     } else if (type == "dev") {
       tmpStack.push("https://dev.blueedge.me/");
     } else if (type == "ver") {
-      tmpStack.push("OS [Version 10.0.22000.51]");
+      tmpStack.push("Microsoft Windows [版本 10.0.22000.51]");
     } else if (type == "systeminfo") {
       var dvInfo = [
         "Host Name:                 BLUE",
