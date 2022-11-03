@@ -15063,17 +15063,6 @@ packages:
       idb: 7.0.1
       workbox-core: 6.5.4
 
-  /workbox-google-analytics/6.5.4:
-    resolution:
-      {
-        integrity: sha512-8AU1WuaXsD49249Wq0B2zn4a/vvFfHkpcFfqAFHNHwln3jK9QUYmzdkKXGIZl9wyKNP+RRX30vcgcyWMcZ9VAg==,
-      }
-    dependencies:
-      workbox-background-sync: 6.5.4
-      workbox-core: 6.5.4
-      workbox-routing: 6.5.4
-      workbox-strategies: 6.5.4
-
   /workbox-navigation-preload/6.5.4:
     resolution:
       {

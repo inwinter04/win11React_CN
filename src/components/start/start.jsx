@@ -120,13 +120,13 @@ export const StartMenu = () => {
             <div className="menuUp">
               <div className="pinnedApps">
                 <div className="stAcbar">
-                  <div className="gpname">Pinned</div>
+                  <div className="gpname">已固定</div>
                   <div
                     className="gpbtn prtclk"
                     onClick={clickDispatch}
                     data-action="STARTALL"
                   >
-                    <div>All apps</div>
+                    <div>所有应用</div>
                     <Icon fafa="faChevronRight" width={8} />
                   </div>
                 </div>
@@ -152,7 +152,7 @@ export const StartMenu = () => {
               </div>
               <div className="recApps win11Scroll">
                 <div className="stAcbar">
-                  <div className="gpname">Recommended</div>
+                  <div className="gpname">推荐的项目</div>
                   <div className="gpbtn none">
                     <div>More</div>
                     <Icon fafa="faChevronRight" width={8} />
@@ -184,7 +184,7 @@ export const StartMenu = () => {
           <div className="allCont" data-allapps={start.showAll}>
             <div className="appCont">
               <div className="stAcbar">
-                <div className="gpname">All apps</div>
+                <div className="gpname">所有应用</div>
                 <div
                   className="gpbtn prtclk"
                   onClick={clickDispatch}
@@ -267,7 +267,7 @@ export const StartMenu = () => {
                 rounded
                 width={26}
                 click="EXTERNAL"
-                payload="https://blueedge.me"
+                payload="https://www.iamdt.cn/"
               />
               <div className="usName">{userName}</div>
             </div>
@@ -290,7 +290,7 @@ export const StartMenu = () => {
                       fill="currentColor"
                     />
                   </svg>
-                  <span>Lock</span>
+                  <span>锁定</span>
                 </div>
                 <div
                   className="flex prtclk items-center gap-2"
@@ -309,7 +309,7 @@ export const StartMenu = () => {
                       fill="currentColor"
                     />
                   </svg>
-                  <span>Shut down</span>
+                  <span>关机</span>
                 </div>
                 <div
                   className="flex prtclk items-center gap-2"
@@ -328,7 +328,7 @@ export const StartMenu = () => {
                       fill="currentColor"
                     />
                   </svg>
-                  <span>Restart</span>
+                  <span>重启</span>
                 </div>
               </div>
               <svg
@@ -358,26 +358,26 @@ export const StartMenu = () => {
                 setQuery(event.target.value.trim());
               }}
               defaultValue={query}
-              placeholder="Type here to search"
+              placeholder="在此键入以搜索"
               autoFocus
             />
           </div>
           <div className="flex py-4 px-1 text-xs">
             <div className="opts w-1/2 flex justify-between">
               <div value={atab == "All"} onClick={tabSw}>
-                All
+                全部
               </div>
               <div value={atab == "Apps"} onClick={tabSw}>
-                Apps
+                应用
               </div>
               <div value={atab == "Documents"} onClick={tabSw}>
-                Documents
+                文档
               </div>
               <div value={atab == "Web"} onClick={tabSw}>
-                Web
+                网页
               </div>
               <div value={atab == "More"} onClick={tabSw}>
-                More
+                更多
               </div>
             </div>
           </div>
