@@ -31,7 +31,7 @@
       "type": "tile",
       "name": "电源和电池",
       "desc": "睡眠、电池使用情况、节电模式",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
@@ -259,7 +259,7 @@
       "type": "tile",
       "name": "任务栏",
       "desc": "任务栏行为，系统固定项",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
@@ -274,7 +274,7 @@
       "icon": ""
     }
   ],
-  "Apps": [
+  "应用": [
     {
       "type": "tile",
       "name": "应用和功能",
@@ -303,7 +303,7 @@
       "type": "tile",
       "name": "可打开网站的应用",
       "desc": "可在应用而不是浏览器中打开的网站",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
@@ -552,7 +552,7 @@
       "type": "tile",
       "name": "墨迹书写和键入个性化",
       "desc": "个人词典，词典中的字词",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
@@ -630,7 +630,7 @@
     {
       "type": "tile",
       "name": "通话记录",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
@@ -690,7 +690,7 @@
     {
       "type": "tile",
       "name": "视频",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
@@ -705,7 +705,7 @@
     {
       "type": "tile",
       "name": "屏幕截图和应用",
-      "icon": ""
+      "icon": ""
     }
   ],
   "Windows 更新": [
