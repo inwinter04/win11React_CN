@@ -1,35 +1,31 @@
 # Win11React
 
-[![Follow me](https://img.shields.io/github/followers/blueedgetechno?label=follow%20me&style=social)](https://github.com/blueedgetechno)
-[![Follow Twitter](https://img.shields.io/twitter/follow/blueedgetechno?label=Follow%20me&style=social)](https://twitter.com/blueedgetechno)
-[![Join](https://img.shields.io/discord/868499076432408627.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/NcjaNdwtnR)
-[![Build & Deploy](https://github.com/blueedgetechno/win11React/actions/workflows/Build-Deploy.yml/badge.svg)](https://github.com/blueedgetechno/win11React/actions/workflows/Build-Deploy.yml)
-[![PR Preview](https://github.com/blueedgetechno/win11React/actions/workflows/PR-Preview.yml/badge.svg)](https://github.com/blueedgetechno/win11React/actions/workflows/PR-Preview.yml)
-![Uptime](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/win11react/status/master/api/win11-react/uptime.json)
-[![Translate](https://badges.crowdin.net/win11react/localized.svg)](https://translate.win11react.com/)
+[![Build & Deploy](https://github.com/inwinter04/win11React_CN/actions/workflows/Build-Deploy.yml/badge.svg)](https://github.com/inwinter04/win11React_CN/actions/workflows/Build-Deploy.yml)
+![Repo-size](https://img.shields.io/github/repo-size/inwinter04/win11React_CN)
+[![PR Preview](https://github.com/inwinter04/win11React_CN/actions/workflows/PR-Preview.yml/badge.svg)](https://github.com/inwinter04/win11React_CN/actions/workflows/PR-Preview.yml)
+![Stars](https://img.shields.io/github/stars/inwinter04/win11React_CN)
+![Forks](https://img.shields.io/github/forks/inwinter04/win11React_CN)
+![License](https://img.shields.io/github/license/inwinter04/win11React_CN)
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/blueedgetechno)
+win11React 是一个开源项目，旨在使用 React、CSS 和 JavaScript 等标准 Web 技术在 Web 上复制 Windows 11 桌面体验
+win11React_CN 是win11React的一个本土化项目，本项目为win11React提供近乎完整的中文翻译。
 
-This open source project is made in the hope to replicate the Windows 11 desktop experience on web, using standard web technologies like React, CSS (SCSS), and JS.
+## 申明
 
-## Notice
+> 此项目绝不附属于微软，且不应与微软操作系统或产品混淆。
+> 这也不是 **Windows 365 cloud PC**。
 
-> This project is **not in anyway affiliated with Microsoft** and **should not be confused with Microsoft’s Operating System** or Products.
-> This is **not** a Windows 365 cloud PC.
 
-**THIS IS NOT THE APP STORE REPO**:
-[App Store](https://github.com/win11react/store)
-
-**Documentation**:
+**文档**:
 https://win11react-docs.andrewstech.me/
 
-## _This project is still a work in progress._
+## _该项目仍在进行中_
 
-#### Live Experience🌈: [win11.blueedge.me](https://win11.blueedge.me)
+#### 现场体验🌈: [win11.iamdt.eu.org](https://win11.iamdt.eu.org)
 
 ![Home](./public/img/home.jpg)
 
-# Gallery
+# 展示
 
 ![image](https://user-images.githubusercontent.com/89068816/154832868-6ec81a0b-0bc3-4e77-a4bf-3391b852fe9c.png)
 
@@ -37,63 +33,58 @@ https://win11react-docs.andrewstech.me/
 
 ![image](https://user-images.githubusercontent.com/89068816/154832942-b3e435dd-5fe4-4bc1-a9be-34262698625d.png)
 
-# Why
+# 为什么
 
-WHY NOT? Why not just waste a week of your life creating a React project, just to cover up your insecurities of how incompetent you are. Just why not!
+为什么不呢？为什么不浪费一周的时间创建一个 React 项目，只是为了掩盖你对自己无能的不安全感。为什么不呢！
 
-# Features
+# 特性
 
-- [x] Start Menu, Search Menu and Widgets
-- [x] Desktop and Right Click action
-- [x] Side Navigation and Calendar View
-- [x] Snap windows in different layouts
-- [x] Browser, Store, Terminal, Calculator
-- [x] Notepad, Vscode, Whiteboard
-- [x] File Explorer + Setting
-- [x] Drag and Resize windows
-- [x] Startup and Lock screen
-- [x] Themes and Background
-- [x] Multilang Support
+- [x] 开始菜单、搜索菜单和小部件
+- [x] 桌面和右键单击操作
+- [x] 侧边导航和日历视图
+- [x] 不同布局中的贴靠窗口
+- [x] 浏览器， 商店， 终端， 计算器
+- [x] 记事本、Vscode、白板
+- [x] 文件资源管理器 + 设置
+- [x] 拖动窗口和调整窗口大小
+- [x] 启动和锁定屏幕
+- [x] 主题和背景
+- [x] 多语言支持
 
-📑 [Suggest More](https://github.com/blueedgetechno/win11React/issues/new/choose)
-
-# Stack
-
-- Framework - React (^17.0.2) + Redux
-- Component/UI Library - None!!
-- Styling Solution - SCSS and CSS Modules (tailwind).
-- Icons - fontawesome
+📑 [建议更多](https://github.com/inwinter04/win11React_CN/issues/new/choose)
 
 ## FAQ
 
-- Is this the full operating system?
-  - No, This is not a full operating system and It is also not affiliated by Microsoft in anyway.
-- How long did it take?
-  - Honestly It took 2-3 days collecting assets, 2-3 planning and about 6 days programming it.
-- Did you use any UI/Library?
-  - No.
-- Can I contribute?
-  - Yes, you can! Open an issue, create a pull request, head over to [discussions](https://github.com/blueedgetechno/win11React/discussions) or join the [Discord](https://discord.gg/NcjaNdwtnR).
-- Where did you get the inspiration from, if you have?
-  - I got the inspiration from [this youtube video](https://www.youtube.com/watch?v=OtOmxa9UMe8).
-- What is the answer of Life, the Universe, and Everything?
+- 这是完整的操作系统吗？
+  - 不，这不是一个完整的操作系统，无论如何它也不隶属于微软。
+- 花了多长时间？
+  - 老实说，收集资产需要 2-3 天，规划需要 2-3 天，编程时间约为 6 天。
+- 您是否使用过任何 UI/库？
+  - 并没有。
+- 我可以做贡献吗？
+  - 是的，你可以！打开议题、创建拉取请求、前往讨论或加入Discord。
+- 如果有的话，你从哪里得到灵感？
+  - 我从[这个YouTube视频](https://www.youtube.com/watch?v=OtOmxa9UMe8)中得到了灵感。
+- 生命、宇宙和万物的答案是什么？
   - 42
 
 ![Answer](./public/answer.png)
 
-## 🌟 Star this project
+## 🌟 为该项目加注星标
 
-### [⏫ Scroll to the ⭐️ button](#start-of-content)
+### [⏫ 滚动到⭐️按钮 ](#start-of-content)
 
-If you believe this project has potential, feel free to **star this repo** just like many amazing people have 👇
+如果你认为这个项目有潜力，请像许多了不起的人一样随时为这个项目添加星标 👇
 ![](https://user-images.githubusercontent.com/89068816/188550244-3cd2bca6-7135-418f-9dcd-25ea6bd96d5f.gif)
 
-## Local Deployment
+## 本地部署
 
 # Docker
 
-To use docker use the following command:
+要使用 docker，请使用以下命令：
 `docker run -d --restart unless-stopped --name win11react -p 3000:3000 blueedge/win11react:latest`
+
+（*此方式安装的并非汉化版本*）
 
 # Home Assistant
 
@@ -101,44 +92,40 @@ To use docker use the following command:
 
 # Balena-Cloud
 
-[![Balena Deploy Button](https://www.balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/blueedgetechno/win11React)
+[![Balena Deploy Button](https://www.balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/inwinter04/win11React_CN)
 
 ---
 
-# Compiled
+# 编译
 
-You can find a compiled `.exe` in the **Releases** section or via clicking [HERE](https://github.com/blueedgetechno/win11React/releases)
+你可以在 **Releases** 中或点击[此处](https://github.com/inwinter04/win11React_CN/releases) 找到编译的`可执行文件`
 
 **WINGET - WINDOWS PACKAGE MANAGER**
-If you have one of the latest windows builds then you can enter the command below in **CMD**
+如果您有最新的Windows版本之一，则可以在**CMD**中输入以下命令
 
 `winget install blueedge.win11react`
 
-## Online Deployment
+（*此方式安装的并非汉化版本*）
+
+## 在线部署
+
+我非常推荐使用**Vercel**进行在线部署，就像演示网站那样。对于中国用户来说，他的访问速度是极快的，在某种意义上这是完全免费的。
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/inwinter04/win11React_CN&project-name=windows11&repo-name=windows11-react&demo-title=Windows%2011%20Demo&demo-description=Static&demo-url=https://win11.iamdt.eu.org)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fblueedgetechno%2Fwin11React&envs=PORT&PORTDesc=Port+of+the+application&PORTDefault=3000&referralCode=BatemaDevelopment)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/inwinter04/win11React_CN)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/blueedgetechno/win11React)
+## 特别鸣谢
+在此特别感谢原作者Blue edge与Win11 react团队为本项目做出的巨大贡献。你可以[点击此](https://github.com/blueedgetechno/win11React)进入原项目支持他们！
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fblueedgetechno%2Fwindows11%2F&project-name=windows11&repo-name=windows11-react&demo-title=Windows%2011%20Demo&demo-description=Static&demo-url=https%3A%2F%2Fwin11.blueedge.me%2F)
+## 贡献者
 
-## Contributors
-
-<a href="https://github.com/blueedgetechno/win11React/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=blueedgetechno/win11React" />
+<a href="https://github.com/inwinter04/win11React_CN/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=inwinter04/win11React_CN" />
 </a>
 
-### Known Issues
-
-- Blur not working in Firefox browser.
-
-###### Solution:
-
-1. Open `about:config` in your firefox browser.
-2. Search for `layout.css.backdrop-filter.enabled` and set it to `true`.
-
-## License
+## 许可证
 
 ⚖️ CC0-1.0 License
