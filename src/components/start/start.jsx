@@ -191,7 +191,7 @@ export const StartMenu = () => {
                   data-action="STARTALL"
                 >
                   <Icon className="chevLeft" fafa="faChevronLeft" width={8} />
-                  <div>Back</div>
+                  <div>返回</div>
                 </div>
               </div>
               <div className="allApps win11Scroll" data-alpha={start.alpha}>
@@ -387,7 +387,7 @@ export const StartMenu = () => {
               data-width={query.length != 0}
             >
               <div className="text-sm font-semibold mb-4">
-                {query.length ? "Best match" : "Top apps"}
+                {query.length ? "最佳匹配" : "最近"}
               </div>
               {query.length ? (
                 <div className="textResult h-16">
@@ -395,7 +395,7 @@ export const StartMenu = () => {
                     <Icon src={match.icon} width={24} />
                     <div className="matchInfo flex-col px-2">
                       <div className="font-semibold text-xs">{match.name}</div>
-                      <div className="text-xss">App</div>
+                      <div className="text-xss">应用</div>
                     </div>
                   </div>
                   <div
@@ -406,8 +406,8 @@ export const StartMenu = () => {
                   >
                     <Icon className="blueicon" src="search" ui width={20} />
                     <div className="matchInfo flex-col px-2">
-                      <div className="font-semibold text-xs">Search online</div>
-                      <div className="text-xss">Web</div>
+                      <div className="font-semibold text-xs">搜索网页</div>
+                      <div className="text-xss">网页</div>
                     </div>
                   </div>
                 </div>
@@ -430,7 +430,7 @@ export const StartMenu = () => {
                     })}
                   </div>
                   <div className="text-sm font-semibold mt-8">
-                    Quick Searches
+                    快速搜索
                   </div>
                   <div className="quickSearches mt-2">
                     {start.qksrch.map((srch, i) => {
@@ -464,7 +464,7 @@ export const StartMenu = () => {
                   data-payload={match.payload ? match.payload : "full"}
                 >
                   <Icon className="blueicon" src="link" ui width={16} />
-                  <div className="text-xss ml-3">Open</div>
+                  <div className="text-xss ml-3">打开</div>
                 </div>
               </div>
             ) : null}
