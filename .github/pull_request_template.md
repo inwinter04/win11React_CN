@@ -1,13 +1,13 @@
-# Description
+# 说明
 
-Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
-Fixes # (issue)
+请简述程序的变化和哪个问题已修复。也请说明进行更改的原因。列出此更改所需的任何依赖项。
+修复 # (issue)
 
-## Type of change
+## 更改类型
 
-Please delete options that are not relevant.
+请删除不相关的选项。
 
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] This change requires a documentation update
+- [ ] Bug修复(修复问题的非破坏性更改)
+- [ ] 新特性(增加功能的非破坏性更改)
+- [ ] 破坏性更改(会导致现有功能不能按预期工作的修复)
+- [ ] 此更改需要更新README文档

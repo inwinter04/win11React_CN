@@ -1,35 +1,35 @@
-# Contributing to this repository
+# 向这个存储库贡献
 
-## Getting started
+## 入门指南
 
-Before you begin:
+在你开始之前:
 
-- This site is powered ⚡ by React.js
-- Check out the [existing issues](https://github.com/blueedgetechno/win11React/issues), [pull requests](https://github.com/blueedgetechno/win11React/pulls) and [discussions](https://github.com/blueedgetechno/win11React/discussions).
-- Check the [already existing and upcoming features](https://github.com/blueedgetechno/win11React#features).
+- 本网站由React.js支持⚡
+- 请检查 [已有的 issues](https://github.com/inwinter04/win11React_CN/issues), [pull requests](https://github.com/inwinter04/win11React_CN/pulls) and [discussions](https://github.com/inwinter04/win11React_CN/discussions).
+- 检查 [已经存在的和计划中的特性](https://github.com/inwinter04/win11React_CN#features).
 
-Before you make your changes, check to see if an [issue exists](https://github.com/blueedgetechno/win11React/issues) already for the change you want to make.
+在进行更改之前，请检查要进行的更改是否已经存在[issue](https://github.com/inwinter04/win11React_CN/issues)。
 
-### Don't see your issue? Open one
+### 未找到你的问题？打开一个！
 
-If you spot something new, [open an issue](https://github.com/blueedgetechno/win11React/issues/new/choose). We'll use the issue to have a conversation 🗣 about the problem you want to fix.
+如果你发现了一些新的问题，就打开一个[issue](https://github.com/inwinter04/win11React_CN/issues/new/choose)。我们将在您打开的issue中与您进行对话🗣。
 
-### Ready to make a change? Fork the repo
+### 准备好做出更改了吗? Fork 本项目
 
-- Fork using [GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop)
+- 使用 [GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop) 进行Fork
 
-- Fork using the [command line](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository)
+- 使用 [command line](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository) 进行Fork
 
-- Fork with [GitHub Codespaces](https://github.com/features/codespaces):
+- 使用 [GitHub Codespaces](https://github.com/features/codespaces) 进行Fork
 
-### Open a pull request
+### 打开一个拉取请求
 
-When you're done making changes and you'd like to propose them for review, use the [pull request tab](https://github.com/blueedgetechno/win11React/pulls) to open your PR.
+当你完成了更改，并且你想更改应用到本项目时，使用[pull request](https://github.com/inwinter04/win11React_CN/pulls)进行你的拉取请求。
 
-Once you submit your PR, we will review it with you. The first thing you're going to want to do is a self review 🧾.
+一旦您提交了您的PR，我们将与您一起审查它。你要做的第一件事是做一个自我回顾🧾。
 
-### Your PR is merged!
+### 你的PR被合并了!
 
-Congratulations 🎊!
+恭喜你 🎊!
 
-Once your PR is merged, you will be proudly listed as a contributor in the [contributor chart](https://github.com/blueedgetechno/win11React/graphs/contributors).
+一旦您的PR被合并，您将被自豪地列为[贡献者图表](https://github.com/inwinter04/win11React_CN/graphs/contributors)中的贡献者。

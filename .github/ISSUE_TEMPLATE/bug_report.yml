@@ -1,36 +1,36 @@
-name: Bug Report
-description: File a bug report
+name: 问题反馈
+description: 如果它不工作！请告诉我！
 title: "[Bug]: "
 labels: ["bug"]
 assignees:
-  - win11bot
+  - inwinter04
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        感谢您花时间填写此错误报告!
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: 发生了什么?
+      description: 再告诉我们，你期望发生什么?
+      placeholder: 告诉我们你看到了什么!
+      value: "发生了一个错误!"
     validations:
       required: true
   - type: textarea
     id: Reproduce
     attributes:
-      label: To reproduce the behavior?
-      description: Steps to reproduce the behavior.
+      label: 如何复现这个问题
+      description: 复现这个问题的步骤
       placeholder: opened store
-      value: "reproduce!"
+      value: "复现！"
     validations:
       required: true
   - type: dropdown
     id: browsers
     attributes:
-      label: What browser are you seeing the problem on?
+      label: 您在什么浏览器上遇到这个问题?
       multiple: false
       options:
         - Firefox
