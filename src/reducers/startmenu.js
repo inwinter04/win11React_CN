@@ -10,10 +10,10 @@ const defState = {
   pwctrl: false,
   curAlpha: "A",
   qksrch: [
-    ["faClock", 1, "Today in history"],
-    ["faChartLine", null, "Markets today"],
-    ["faFilm", null, "New movies"],
-    ["faNewspaper", 1, "Top news"],
+    ["faClock", 1, "历史的今天"], 
+    ["faChartLine", null, "今日市场"],  //emmm，似乎是股票。这咋翻译哇（冬天
+    ["faFilm", null, "近期电影"],
+    ["faNewspaper", 1, "头条新闻"],
   ],
 };
 

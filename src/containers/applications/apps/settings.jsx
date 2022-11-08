@@ -134,20 +134,6 @@ export const Settings = () => {
                                 </div>
                               </div>
                               <div className="right">
-                                <div className="column">
-                                  <img
-                                    src="https://upload.wikimedia.org/wikipedia/commons/2/25/Microsoft_icon.svg"
-                                    height={20}
-                                    alt=""
-                                  />
-                                  <p>
-                                    Microsoft 365
-                                    <br />
-                                    <span className="column_lower">
-                                      View benefits
-                                    </span>
-                                  </p>
-                                </div>
                                 <div
                                   className="column"
                                   onClick={() => setPage("Windows 更新")}
