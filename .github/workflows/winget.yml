@@ -8,5 +8,5 @@ jobs:
     steps:
       - uses: vedantmgoyal2009/winget-releaser@latest
         with:
-          identifier: blueedge.win11react
+          identifier: inwinter04.win11react
           token: ${{ secrets.BOT}}
