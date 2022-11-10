@@ -1,8 +1,8 @@
 # Win11React
 
-[![Build & Deploy](https://github.com/inwinter04/win11React_CN/actions/workflows/Build-Deploy.yml/badge.svg)](https://github.com/inwinter04/win11React_CN/actions/workflows/Build-Deploy.yml)
+[![Build & Deploy](https://github.com/inwinter04/win11React_CN/actions/workflows/production.yml/badge.svg)](https://github.com/inwinter04/win11React_CN/actions/workflows/production.yml)
 ![Repo-size](https://img.shields.io/github/repo-size/inwinter04/win11React_CN)
-[![PR Preview](https://github.com/inwinter04/win11React_CN/actions/workflows/PR-Preview.yml/badge.svg)](https://github.com/inwinter04/win11React_CN/actions/workflows/PR-Preview.yml)
+[![PR Preview](https://github.com/inwinter04/win11React_CN/actions/workflows/preview.yml/badge.svg)](https://github.com/inwinter04/win11React_CN/actions/workflows/preview.yml)
 ![Stars](https://img.shields.io/github/stars/inwinter04/win11React_CN)
 ![Forks](https://img.shields.io/github/forks/inwinter04/win11React_CN)
 ![License](https://img.shields.io/github/license/inwinter04/win11React_CN)
