@@ -3,7 +3,7 @@ import icons from "./apps";
 var { taskbar, desktop, pinned, recent } = {
   taskbar: (localStorage.getItem("taskbar") &&
     JSON.parse(localStorage.getItem("taskbar"))) || [
-    "Settings",
+    "设置",
     "文件资源管理器",
     "Microsoft Edge",
     "Store",
@@ -24,28 +24,26 @@ var { taskbar, desktop, pinned, recent } = {
   pinned: (localStorage.getItem("pinned") &&
     JSON.parse(localStorage.getItem("pinned"))) || [
     "Microsoft Edge",
-    "Get Started",
-    "Task Manager",
-    "Mail",
-    "Settings",
+    "入门",
+    "任务管理器",
+    "邮件",
+    "设置",
     "Store",
     "Unescape",
     "Buy me a coffee",
-    "Notepad",
+    "记事本",
     "Whiteboard",
-    "Calculator",
+    "计算器",
     "Spotify",
-    "Twitter",
     "文件资源管理器",
-    "Terminal",
+    "终端",
     "Github",
-    "Camera",
+    "相机",
   ],
   recent: (localStorage.getItem("recent") &&
     JSON.parse(localStorage.getItem("recent"))) || [
-    "Mail",
-    "Twitter",
-    "Terminal",
+    "邮件",
+    "终端",
     "Github",
     "文件资源管理器",
     "Spotify",
