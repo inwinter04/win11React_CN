@@ -16,9 +16,6 @@ jobs:
 
       - run: |
           npm ci
-          npm run crowdin init
-          npm run crowdin upload
-          npm run crowdin download
           npm run ghbuild
         env:
           api_token: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
@@ -71,7 +68,7 @@ jobs:
           TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
         with:
           tagName: __VERSION__ # the action automatically replaces \_\_VERSION\_\_ with the app version
-          releaseName: "Win11inReact v__VERSION__"
+          releaseName: "Win11inReact_CN v__VERSION__"
           releaseBody: "new build"
           releaseDraft: false
           prerelease: false
