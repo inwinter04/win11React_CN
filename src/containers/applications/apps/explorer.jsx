@@ -230,7 +230,7 @@ export const Explorer = () => {
                 type="text"
                 onChange={handleSearchChange}
                 value={searchtxt}
-                placeholder="Search"
+                placeholder="搜索"
               />
             </div>
           </div>
@@ -239,7 +239,7 @@ export const Explorer = () => {
             <ContentArea searchtxt={searchtxt} />
           </div>
           <div className="sec3">
-            <div className="item-count text-xs">{fdata.data.length} items</div>
+            <div className="item-count text-xs">{fdata.data.length} 个项目</div>
             <div className="view-opts flex">
               <Icon
                 className="viewicon hvtheme p-1"
@@ -334,35 +334,35 @@ const NavPane = ({}) => {
   return (
     <div className="navpane win11Scroll">
       <div className="extcont">
-        <Dropdown icon="star" title="Quick access" action="" isDropped>
+        <Dropdown icon="star" title="快速访问" action="" isDropped>
           <Dropdown
             icon="down"
-            title="Downloads"
+            title="下载"
             spid="%downloads%"
             notoggle
             pinned
           />
-          <Dropdown icon="user" title="Blue" spid="%user%" notoggle pinned />
+          <Dropdown icon="user" title="冬天冬天W" spid="%user%" notoggle pinned />
           <Dropdown
             icon="docs"
-            title="Documents"
+            title="文档"
             spid="%documents%"
             notoggle
             pinned
           />
           <Dropdown title="Github" spid="%github%" notoggle />
-          <Dropdown icon="pics" title="Pictures" spid="%pictures%" notoggle />
+          <Dropdown icon="pics" title="图片" spid="%pictures%" notoggle />
         </Dropdown>
         <Dropdown icon="onedrive" title="OneDrive" spid="%onedrive%" />
-        <Dropdown icon="thispc" title="This PC" action="" isDropped>
-          <Dropdown icon="desk" title="Desktop" spid="%desktop%" />
-          <Dropdown icon="docs" title="Documents" spid="%documents%" />
-          <Dropdown icon="down" title="Downloads" spid="%downloads%" />
-          <Dropdown icon="music" title="Music" spid="%music%" />
-          <Dropdown icon="pics" title="Pictures" spid="%pictures%" />
-          <Dropdown icon="vid" title="Videos" spid="%videos%" />
-          <Dropdown icon="disc" title="OS (C:)" spid="%cdrive%" />
-          <Dropdown icon="disk" title="Blue (D:)" spid="%ddrive%" />
+        <Dropdown icon="thispc" title="此电脑" action="" isDropped>
+          <Dropdown icon="desk" title="桌面" spid="%desktop%" />
+          <Dropdown icon="docs" title="文档" spid="%documents%" />
+          <Dropdown icon="down" title="下载" spid="%downloads%" />
+          <Dropdown icon="music" title="音乐" spid="%music%" />
+          <Dropdown icon="pics" title="图片" spid="%pictures%" />
+          <Dropdown icon="vid" title="视频" spid="%videos%" />
+          <Dropdown icon="disc" title="系统 (C:)" spid="%cdrive%" />
+          <Dropdown icon="disk" title="软件 (D:)" spid="%ddrive%" />
         </Dropdown>
       </div>
     </div>
@@ -375,7 +375,7 @@ const Ribbon = ({}) => {
       <div className="ribsec">
         <div className="drdwcont flex">
           <Icon src="new" ui width={18} margin="0 6px" />
-          <span>New</span>
+          <span>新建</span>
         </div>
       </div>
       <div className="ribsec">
@@ -387,11 +387,11 @@ const Ribbon = ({}) => {
       <div className="ribsec">
         <div className="drdwcont flex">
           <Icon src="sort" ui width={18} margin="0 6px" />
-          <span>Sort</span>
+          <span>排序</span>
         </div>
         <div className="drdwcont flex">
           <Icon src="view" ui width={18} margin="0 6px" />
-          <span>View</span>
+          <span>查看</span>
         </div>
       </div>
     </div>

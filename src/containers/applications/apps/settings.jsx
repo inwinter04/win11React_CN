@@ -75,7 +75,7 @@ export const Settings = () => {
                 />
                 <div>
                   <p>{userName}</p>
-                  <p>Local Account</p>
+                  <p>本地用户</p>
                 </div>
               </div>
               <input

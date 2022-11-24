@@ -215,21 +215,21 @@ const DownPage = ({ action, apps }) => {
           value={catg == "all"}
           onClick={() => setCatg("all")}
         >
-          All
+          全部
         </div>
         <div
           className="catbtn handcr"
           value={catg == "app"}
           onClick={() => setCatg("app")}
         >
-          Apps
+          应用
         </div>
         <div
           className="catbtn handcr"
           value={catg == "game"}
           onClick={() => setCatg("game")}
         >
-          Games
+          游戏
         </div>
         <div className="absolute right-0 mr-4 text-sm">
           <a

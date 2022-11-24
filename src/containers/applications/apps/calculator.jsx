@@ -151,13 +151,13 @@ export const Calculator = () => {
         app={wnapp.action}
         icon={wnapp.icon}
         size={wnapp.size}
-        name="Calculator"
+        name="计算器"
       />
       <div className="windowScreen flex flex-col" data-dock="true">
         <div className="flex pt-2">
           <div className="flex pl-2 items-center">
             <Icon className="menuBars" fafa="faBars" color="#222" width={14} />
-            <div className="mx-4 font-semibold pb-1">Standard</div>
+            <div className="mx-4 font-semibold pb-1">标准</div>
           </div>
         </div>
         <div className="restWindow h-full flex-grow flex">
@@ -252,9 +252,9 @@ export const Calculator = () => {
             </div>
           </div>
           <div className="calcHis flex flex-col">
-            <div className="text-sm font-semibold">History</div>
+            <div className="text-sm font-semibold">历史</div>
             {hist.length != 0 ? null : (
-              <div className="text-xs mt-4">There's no history yet</div>
+              <div className="text-xs mt-4">尚无历史记录</div>
             )}
             <div className="histCont win11Scroll">
               <div className="hct h-max flex-grow">

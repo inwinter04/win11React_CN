@@ -21,13 +21,13 @@ export const Notepad = () => {
         app={wnapp.action}
         icon={wnapp.icon}
         size={wnapp.size}
-        name="Untitled - Notepad"
+        name="无标题 - 记事本"
       />
       <div className="windowScreen flex flex-col" data-dock="true">
         <div className="flex text-xs py-2 topBar">
-          <div className="mx-2">File</div>
-          <div className="mx-4">Edit</div>
-          <div className="mx-4">View</div>
+          <div className="mx-2">文件</div>
+          <div className="mx-4">编辑</div>
+          <div className="mx-4">查看</div>
         </div>
         <div className="restWindow h-full flex-grow">
           <div className="w-full h-full overflow-hidden">
