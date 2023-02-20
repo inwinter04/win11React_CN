@@ -267,7 +267,7 @@ export const StartMenu = () => {
                 rounded
                 width={26}
                 click="EXTERNAL"
-                payload="https://www.iamdt.cn/"
+                payload="https://blueedge.me/"
               />
               <div className="usName">{userName}</div>
             </div>
