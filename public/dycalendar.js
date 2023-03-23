@@ -410,7 +410,7 @@
     result.targetedDayName = dateString[0];
     result.targetedDayFullName = dayName.full[idx];
 
-    return result;
+    return monthDays;
   }
 
   /**
