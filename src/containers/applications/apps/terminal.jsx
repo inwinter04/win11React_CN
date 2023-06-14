@@ -8,12 +8,34 @@ import dirs from "./assets/dir.json";
 
 export const WnTerminal = () => {
   const wnapp = useSelector((state) => state.apps.terminal);
-  const [stack, setStack] = useState(["OS [Version 10.0.22000.51]", ""]);
+  const [stack, setStack] = useState(["Microsoft Windows [版本 10.0.22000.51]", ""]);
   const [pwd, setPwd] = useState("C:\\Users\\Blue");
   const [lastCmd, setLsc] = useState(0);
   const [wntitle, setWntitle] = useState("命令提示符");
 
   const dispatch = useDispatch();
+
+  let IpDetails = [];
+  const getIPDetails = async () => {
+    try {
+      const response = await fetch("https://ipapi.co/json")
+        .then((response) => response.json())
+        .then((data) => {
+          IpDetails.push(data);
+        });
+    } catch (error) {
+      console.log(error);
+      // handling the error
+      IpDetails.push({
+        ip: "__network_error",
+        network: "__kindly check internet connection",
+        city: "",
+        region: "",
+        org: "",
+        postal: "",
+      });
+    }
+  };
 
   const dirFolders = (isFile = "") => {
     var tdir = { ...dirs },
@@ -198,7 +220,7 @@ export const WnTerminal = () => {
           Math.floor(Math.random() * 100)
       );
     } else if (type == "exit") {
-      tmpStack = ["OS [Version 10.0.22000.51]", ""];
+      tmpStack = ["Microsoft Windows [版本 10.0.22000.51]", ""];
       dispatch({ type: wnapp.action, payload: "close" });
     } else if (type == "title") {
       setWntitle(arg.length ? arg : "命令提示符");
@@ -236,7 +258,7 @@ export const WnTerminal = () => {
       var helpArr = [
         "CD             Displays the name of or changes the current directory.",
         "CLS            Clears the screen.",
-        "COLOR		  	Sets the default console foreground and background colors.",
+        "COLOR		Sets the default console foreground and background colors.",
         "DATE           Displays or sets the date.",
         "DIR            Displays a list of files and subdirectories in a directory.",
         "ECHO           Displays messages, or turns command echoing on or off.",
@@ -256,6 +278,16 @@ export const WnTerminal = () => {
         tmpStack.push(helpArr[i]);
       }
     } else if (type == "") {
+    } else if (type == "ipconfig") {
+      const IP = IpDetails[0];
+      tmpStack.push("Windows IP Configuration");
+      tmpStack.push("");
+      tmpStack.push("IPv6: " + IP.ip);
+      tmpStack.push("Network: " + IP.network);
+      tmpStack.push("City: " + IP.city);
+      tmpStack.push("Network Org: " + IP.org);
+      tmpStack.push("Region: " + IP.region);
+      tmpStack.push("Postal: " + IP.postal);
     } else {
       tmpStack.push(
         `'${type}' is not recognized as an internal or external command,`
@@ -403,6 +435,8 @@ export const WnTerminal = () => {
   };
 
   useEffect(() => {
+    getIPDetails();
+
     if (wnapp.dir && wnapp.dir != pwd) {
       setPwd(wnapp.dir);
       dispatch({ type: "OPENTERM", payload: null });
