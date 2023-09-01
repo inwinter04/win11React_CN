@@ -165,10 +165,10 @@
                   "icon": "vid"
                 },
                 "data": {
-                  "porn-collection": {}
+                  "movie-collection": {}
                 }
               },
-              "Github": {
+              "GitHub": {
                 "info": {
                   "spid": "%github%"
                 },
