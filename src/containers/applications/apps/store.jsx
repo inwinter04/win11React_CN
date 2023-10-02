@@ -472,7 +472,7 @@ const FrontPage = (props) => {
         src="img/store/lucacover.jpg"
         ext
       />
-      <div className="panelName absolute m-6 text-xl top-0">Home</div>
+      <div className="panelName absolute m-6 text-xl top-0">主页</div>
       <div className="w-full overflow-x-scroll noscroll overflow-y-hidden -mt-16">
         <div className="storeRibbon">
           {ribbon &&

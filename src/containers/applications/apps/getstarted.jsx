@@ -40,7 +40,7 @@ export const Getstarted = () => {
         app={wnapp.action}
         icon={wnapp.icon}
         size={wnapp.size}
-        name="Get Started"
+        name="入门"
       />
       <div className="windowScreen flex flex-col" data-dock="true">
         <div className="restWindow flex-grow flex flex-col">
@@ -100,7 +100,7 @@ export const Getstarted = () => {
                 </div>
                 <div className="right align">
                   <img id="loader" src="img/oobe/window11_oobe_region.png" />
-                  Checking for updates.
+                  正在检查更新。
                 </div>
               </>
             ) : null}
@@ -110,11 +110,11 @@ export const Getstarted = () => {
                   <img id="left_img" src="img/oobe/window11_oobe_name.png" />
                 </div>
                 <div className="right">
-                  <div className="header mb-2">Let's name your PC</div>
+                  <div className="header mb-2">来命名你的电脑吧！</div>
                   <div className="header_sml">
-                    Make it yours with unique name that's easy to recognize when
-                    connecting to it from other devices.Your Pc will restart
-                    after you name it.
+                  给它起一个独特的名字，当从其他设备连接到它时
+                  这样更容易识别。在你命名之后
+                  你的电脑将重新启动。
                   </div>
                   <div className="OOBE_input">
                     <input
@@ -125,8 +125,8 @@ export const Getstarted = () => {
                     />
                   </div>
                   <div className="text_sml_black">
-                    No more than 15 character <br />
-                    No spaces or any of the following special characters:
+                    不超过15个字符 <br />
+                    没有空格或以下任何特殊字符:
                     <br />
                     &quot;/\ [ ] : | &lt; &gt;+ = ; , ?
                   </div>
@@ -140,28 +140,27 @@ export const Getstarted = () => {
                 </div>
                 <div className="right">
                   <div className="header">
-                    Let's connect you to a network
+                    连接到你的网络
                     <div className="header_sml">
-                      You'll need an internet connection to continue the setting
-                      up your device.Once connected, you'll get the latest
-                      features and security updates.
+                    你需要连接到互联网来继续设置你的设备。
+                    一旦连接，您将获得最新的功能和安全更新。
                     </div>
                     <div className="ethernet_list">
                       <div className="list_oobe_opt_wifi">
                         <i id="connection" className="bx bx-desktop"></i>{" "}
                         <div className="ethernet_list_opt_inr">
-                          <div className="text_sml_black_wifi">Ethernet 01</div>
-                          <div className="header_sml_wifi">Not connected</div>
+                          <div className="text_sml_black_wifi">以太网 01</div>
+                          <div className="header_sml_wifi">未连接</div>
                         </div>
                       </div>
                       <div className="list_oobe_opt"></div>
                       <div className="list_oobe_opt"></div>
                     </div>
                     <div className="text_sml_black">
-                      Having trouble to getting connected?
+                    连接遇到困难?
                     </div>
                     <div className="header_sml">
-                      For troubleshooting tips use another device and visit
+                      有关故障排除提示，请使用其他设备并访问
                       aka.ms/networksetup
                     </div>
                   </div>
@@ -174,14 +173,16 @@ export const Getstarted = () => {
                   <img id="left_img" src="img/oobe/window11_oobe_update.png" />
                 </div>
                 <div className="right">
-                  <div className="header mb-8">The setup has completed.</div>
-                  <div>You can close this now.</div>
+                  <div className="header mb-8">安装已经完成。</div>
+                  <div>现在你可以关闭它了。
+                    
+                  </div>
                 </div>
               </>
             ) : null}
 
             <div className="yes_button base" onClick={nextPage}>
-              Yes
+              是的
             </div>
           </div>
 
