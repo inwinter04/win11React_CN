@@ -68,7 +68,7 @@ export const WnTerminal = () => {
       if (arg.length) {
         tmpStack.push(arg);
       } else {
-        tmpStack.push("ECHO is on.");
+        tmpStack.push("ECHO 处于打开状态。");
       }
     } else if (type == "eval") {
       if (arg.length) {
@@ -109,11 +109,11 @@ export const WnTerminal = () => {
           }
         } else {
           errp = false;
-          tmpStack.push("The directory name is invalid.");
+          tmpStack.push("目录名称无效。");
         }
 
         if (errp) {
-          tmpStack.push("The system cannot find the path specified.");
+          tmpStack.push("系统找不到指定的路径。");
         }
       } else {
         tmpStack.push(pwd);
@@ -154,30 +154,43 @@ export const WnTerminal = () => {
         cmdcont.style.color = color;
       } else {
         tmpStack.push(
-          "Set the color of the background and the text for the console.",
+          "设置默认的控制台前景和背景颜色。",
         );
         tmpStack.push("COLOR [arg]");
-        tmpStack.push("arg\t\tSpecifies the color for the console output");
+        tmpStack.push("arg\t\t指定控制台输出的颜色属性。");
         tmpStack.push(
-          "The color attribute is a combination of the following values:",
+          "颜色属性由两个十六进制数字指定 -- 第一个",
+          "对应于背景，第二个对应于前景。每个数字",
+          "可以为以下任何值:",
         );
-        tmpStack.push("0\t\tBlack");
-        tmpStack.push("1\t\tBlue");
-        tmpStack.push("2\t\tGreen");
-        tmpStack.push("3\t\tCyan");
-        tmpStack.push("4\t\tRed");
-        tmpStack.push("5\t\tMagenta");
-        tmpStack.push("6\t\tBrown");
-        tmpStack.push("7\t\tLight Gray");
-        tmpStack.push("8\t\tDark Gray");
-        tmpStack.push("9\t\tLight Blue");
-        tmpStack.push("A\t\tLight Green");
-        tmpStack.push("B\t\tLight Cyan");
-        tmpStack.push("C\t\tLight Red");
-        tmpStack.push("D\t\tLight Magenta");
-        tmpStack.push("E\t\tYellow");
-        tmpStack.push("F\t\tWhite");
-        tmpStack.push("Example: COLOR 0a for black text on a green background");
+        tmpStack.push("0\t\t黑色");
+        tmpStack.push("1\t\t蓝色");
+        tmpStack.push("2\t\t绿色");
+        tmpStack.push("3\t\t浅绿色");
+        tmpStack.push("4\t\t红色");
+        tmpStack.push("5\t\t洋红色");
+        tmpStack.push("6\t\t灰色");
+        tmpStack.push("7\t\t亮灰色");
+        tmpStack.push("8\t\t灰色");
+        tmpStack.push("9\t\t淡蓝色");
+        tmpStack.push("A\t\t淡绿色");
+        tmpStack.push("B\t\t淡浅绿色");
+        tmpStack.push("C\t\t淡红色");
+        tmpStack.push("D\t\t浅洋红");
+        tmpStack.push("E\t\t淡黄色");
+        tmpStack.push("F\t\t亮白色");
+        tmpStack.push(
+          "如果没有给定任何参数，此命令会将颜色还原到 CMD.EXE 启动时",
+          "的颜色。这个值来自当前控制台",
+          "窗口、/T 命令行开关或 DefaultColor 注册表",
+          "值。",
+          "",
+          "如果尝试使用相同的",
+          "前景和背景颜色来执行",
+          "COLOR 命令，COLOR 命令会将 ERRORLEVEL 设置为 1。",
+          "",
+          '示例: /"COLOR fc" 在亮白色上产生淡红色',
+        );
       }
     } else if (type == "type") {
       var errp = true;
@@ -200,7 +213,7 @@ export const WnTerminal = () => {
       }
 
       if (errp) {
-        tmpStack.push("The system cannot find the file specified.");
+        tmpStack.push("系统找不到指定的文件。");
       }
     } else if (type == "start") {
       dispatch({ type: "EDGELINK", payload: arg });
@@ -236,19 +249,21 @@ export const WnTerminal = () => {
       tmpStack.push("blueedgetechno");
     } else if (type == "dev") {
       tmpStack.push("https://dev.blueedge.me/");
+    } else if (type == "iamdt") {
+      tmpStack.push("https://www.iamdt.cn");
     } else if (type == "ver") {
       tmpStack.push("Microsoft Windows [版本 10.0.22000.51]");
     } else if (type == "systeminfo") {
       var dvInfo = [
-        "Host Name:                 BLUE",
-        "OS Name:                   Win11React Dummys Edition",
-        "OS Version:                10.0.22000 N/A Build 22000.51",
-        "OS Manufacturer:           ",
-        "OS Configuration:          Standalone Workstation",
-        "OS Build Type:             Multiprocessor Free",
-        "Registered Owner:          Blue",
-        "Registered Organization:   N/A",
-        "Product ID:                7H1S1-5AP1R-473DV-3R5I0N",
+        "主机名:               BLUE",
+        "OS 名称:              Microsoft Windows 11 专业版",
+        "OS 版本:              10.0.22621 暂缺 Build 22621",
+        "OS 制造商:            Microsoft Corporation",
+        "OS 配置:              独立工作站",
+        "OS 构建类型:           Multiprocessor Free",
+        "注册的所有人:          Blue",
+        "注册的组织:            暂缺",
+        "产品 ID:              7H1S1-5AP1R-473DV-3R5I0N",
       ];
 
       for (var i = 0; i < dvInfo.length; i++) {
@@ -256,22 +271,25 @@ export const WnTerminal = () => {
       }
     } else if (type == "help") {
       var helpArr = [
-        "CD             Displays the name of or changes the current directory.",
-        "CLS            Clears the screen.",
-        "COLOR		Sets the default console foreground and background colors.",
-        "DATE           Displays or sets the date.",
-        "DIR            Displays a list of files and subdirectories in a directory.",
-        "ECHO           Displays messages, or turns command echoing on or off.",
-        "EXIT           Quits the CMD.EXE program (command interpreter).",
-        "HELP           Provides Help information for Windows commands.",
-        "START          Starts a separate window to run a specified program or command.",
-        "SYSTEMINFO     Displays machine specific properties and configuration.",
-        "TIME           Displays or sets the system time.",
-        "TITLE          Sets the window title for a CMD.EXE session.",
-        "TYPE           Displays the contents of a text file.",
-        "VER            Displays the Windows version.",
-        "PYTHON         EXECUTE PYTHON CODE.",
-        "EVAL           RUNS JavaScript statements.",
+        "有关某个命令的详细信息，请键入 HELP 命令名",
+        "CD             显示当前目录的名称或将其更改。",
+        "CLS            清除屏幕。",
+        "COLOR		  设置默认控制台前景和背景颜色。",
+        "DATE           显示或设置日期。",
+        "DIR            显示一个目录中的文件和子目录。",
+        "ECHO           显示消息，或将命令回显打开或关闭。",
+        "EXIT           退出 CMD.EXE 程序(命令解释程序)。",
+        "HELP           提供 Windows 命令的帮助信息。",
+        "START          启动单独的窗口以运行指定的程序或命令。",
+        "SYSTEMINFO     显示计算机的特定属性和配置。",
+        "TIME           显示或设置系统时间。",
+        "TITLE          设置 CMD.EXE 会话的窗口标题。",
+        "TYPE           显示文本文件的内容。",
+        "VER            显示 Windows 的版本。",
+        "PYTHON         执行 PYTHON 编程。",
+        "EVAL           运行 JavaScript 语句",
+        "",
+        "有关工具的详细信息，请参阅联机帮助中的命令行参考。",
       ];
 
       for (var i = 0; i < helpArr.length; i++) {
@@ -280,21 +298,20 @@ export const WnTerminal = () => {
     } else if (type == "") {
     } else if (type == "ipconfig") {
       const IP = IpDetails[0];
-      tmpStack.push("Windows IP Configuration");
+      tmpStack.push("Windows IP 配置");
       tmpStack.push("");
       tmpStack.push("IPv6: " + IP.ip);
-      tmpStack.push("Network: " + IP.network);
-      tmpStack.push("City: " + IP.city);
-      tmpStack.push("Network Org: " + IP.org);
-      tmpStack.push("Region: " + IP.region);
-      tmpStack.push("Postal: " + IP.postal);
+      tmpStack.push("网络: " + IP.network);
+      tmpStack.push("城市: " + IP.city);
+      tmpStack.push("ISP: " + IP.org);
+      tmpStack.push("区域: " + IP.region);
     } else {
       tmpStack.push(
-        `'${type}' is not recognized as an internal or external command,`,
+        `'${type}' 不是内部或外部命令，也不是可运行的程序`,
       );
-      tmpStack.push("operable program or batch file.");
+      tmpStack.push("或批处理文件。");
       tmpStack.push("");
-      tmpStack.push('Type "help" for available commands');
+      tmpStack.push('输入 "help" 以获取可用命令');
     }
 
     if (type.length > 0) tmpStack.push("");
