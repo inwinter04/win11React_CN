@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Icon } from "../../utils/general";
+import pinyin from "tiny-pinyin";
 
 export const StartMenu = () => {
   const { align } = useSelector((state) => state.taskbar);
@@ -34,7 +35,13 @@ export const StartMenu = () => {
           return state.apps[key];
         });
 
-    tmpApps.sort((a, b) => (a.name > b.name ? 1 : b.name > a.name ? -1 : 0));
+    // 在排序之前将应用程序名称转换为拼音
+    tmpApps.forEach((app) => {
+    app.pinyinName = pinyin.convertToPinyin(app.name, '', false);
+    });
+
+    // 然后根据拼音名称进行排序
+    tmpApps.sort((a, b) => (a.pinyinName > b.pinyinName ? 1 : b.pinyinName > a.pinyinName ? -1 : 0));
 
     for (i = 0; i < 27; i++) {
       allApps[i] = [];
