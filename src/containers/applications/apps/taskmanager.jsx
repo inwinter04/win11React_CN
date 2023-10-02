@@ -98,7 +98,7 @@ export const Taskmanager = () => {
                                   {
                                     powerUsage[
                                       Math.floor(
-                                        Math.random() * powerUsage.length
+                                        Math.random() * powerUsage.length,
                                       )
                                     ]
                                   }
