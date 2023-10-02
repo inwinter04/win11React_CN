@@ -255,15 +255,15 @@ export const WnTerminal = () => {
       tmpStack.push("Microsoft Windows [版本 10.0.22000.51]");
     } else if (type == "systeminfo") {
       var dvInfo = [
-        "主机名:                 BLUE",
-        "OS 名称:                Microsoft Windows 11 专业版",
-        "OS 版本:                10.0.22621 暂缺 Build 22621",
-        "OS 制造商:              Microsoft Corporation",
-        "OS 配置:                独立工作站",
-        "OS 构建类型:             Multiprocessor Free",
-        "注册的所有人:            Blue",
-        "注册的组织:              暂缺",
-        "产品 ID:                7H1S1-5AP1R-473DV-3R5I0N",
+        "主机名:               BLUE",
+        "OS 名称:              Microsoft Windows 11 专业版",
+        "OS 版本:              10.0.22621 暂缺 Build 22621",
+        "OS 制造商:            Microsoft Corporation",
+        "OS 配置:              独立工作站",
+        "OS 构建类型:           Multiprocessor Free",
+        "注册的所有人:          Blue",
+        "注册的组织:            暂缺",
+        "产品 ID:              7H1S1-5AP1R-473DV-3R5I0N",
       ];
 
       for (var i = 0; i < dvInfo.length; i++) {
@@ -274,7 +274,7 @@ export const WnTerminal = () => {
         "有关某个命令的详细信息，请键入 HELP 命令名",
         "CD             显示当前目录的名称或将其更改。",
         "CLS            清除屏幕。",
-        "COLOR		      设置默认控制台前景和背景颜色。",
+        "COLOR		  设置默认控制台前景和背景颜色。",
         "DATE           显示或设置日期。",
         "DIR            显示一个目录中的文件和子目录。",
         "ECHO           显示消息，或将命令回显打开或关闭。",
