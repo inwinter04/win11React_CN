@@ -8,13 +8,13 @@ export const StartMenu = () => {
   const start = useSelector((state) => {
     var arr = state.startmenu,
       ln = (6 - (arr.pnApps.length % 6)) % 6;
-
+  
     for (var i = 0; i < ln; i++) {
       arr.pnApps.push({
         empty: true,
       });
     }
-
+  
     for (i = 0; i < arr.rcApps.length; i++) {
       if (arr.rcApps[i].lastUsed < 0) {
         arr.rcApps[i].lastUsed = "Recently Added";
@@ -27,26 +27,24 @@ export const StartMenu = () => {
           Math.floor(arr.rcApps[i].lastUsed / 60) + "h ago";
       }
     }
-
+  
     var allApps = [],
       tmpApps = Object.keys(state.apps)
         .filter((x) => x != "hz")
         .map((key) => {
-          return state.apps[key];
+          const app = state.apps[key];
+          // 在映射过程中将应用程序名称转换为拼音
+          app.pinyinName = pinyin.convertToPinyin(app.name, '', false);
+          return app;
         });
-
-      // 在排序之前将应用程序名称转换为拼音
-      tmpApps.forEach((app) => {
-        app.pinyinName = pinyin.convertToPinyin(app.name, '', false);
-      });
-
+  
     // 然后根据拼音名称进行排序
-    tmpApps.sort((a, b) => (a.pinyinName.localeCompare(b.pinyinName)));
-
+    tmpApps.sort((a, b) => a.pinyinName.localeCompare(b.pinyinName));
+  
     for (i = 0; i < 27; i++) {
       allApps[i] = [];
     }
-
+  
     for (i = 0; i < tmpApps.length; i++) {
       var t1 = tmpApps[i].name.trim().toUpperCase().charCodeAt(0);
       if (t1 > 64 && t1 < 91) {
@@ -55,11 +53,12 @@ export const StartMenu = () => {
         allApps[0].push(tmpApps[i]);
       }
     }
-
+  
     arr.contApps = allApps;
     arr.allApps = tmpApps;
     return arr;
   });
+  
 
   const [query, setQuery] = useState("");
   const [match, setMatch] = useState({});
