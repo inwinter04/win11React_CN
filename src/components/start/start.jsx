@@ -35,10 +35,10 @@ export const StartMenu = () => {
           return state.apps[key];
         });
 
-    // 在排序之前将应用程序名称转换为拼音
-    tmpApps.forEach((app) => {
-      app.pinyinName = pinyin.convertToPinyin(app.name, '', false);
-    });
+      // 在排序之前将应用程序名称转换为拼音
+      tmpApps.forEach((app) => {
+        app.pinyinName = pinyin.convertToPinyin(app.name, '', false);
+      });
 
     // 然后根据拼音名称进行排序
     tmpApps.sort((a, b) => (a.pinyinName.localeCompare(b.pinyinName)));
