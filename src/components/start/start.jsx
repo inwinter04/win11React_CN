@@ -3,15 +3,12 @@ import { useSelector, useDispatch } from "react-redux";
 import { Icon } from "../../utils/general";
 import pinyin from "tiny-pinyin";
 
-try {
-  // 辅助函数：将中文字符串转换为拼音并提取首字母
-  function getFirstLetter(str) {
-    const pinyinName = pinyin.convertToPinyin(str, '', false);
-    const firstLetter = pinyinName.charAt(0).toUpperCase();
-    return firstLetter >= 'A' && firstLetter <= 'Z' ? firstLetter : '#';
-  }
-} catch (error) {
-  console.error("发生错误1：", error);
+
+// 辅助函数：将中文字符串转换为拼音并提取首字母
+function getFirstLetter(str) {
+  const pinyinName = pinyin.convertToPinyin(str, '', false);
+  const firstLetter = pinyinName.charAt(0).toUpperCase();
+  return firstLetter >= 'A' && firstLetter <= 'Z' ? firstLetter : '#';
 }
 
 export const StartMenu = () => {
@@ -482,3 +479,4 @@ export const StartMenu = () => {
     </div>
   );
 };
+
