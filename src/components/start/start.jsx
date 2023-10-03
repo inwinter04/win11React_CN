@@ -37,12 +37,12 @@ export const StartMenu = () => {
 
     const allApps = {};
     const tmpApps = Object.keys(state.apps)
-      .filter((x) => x !== "hz")
-      .map((key) => {
-        const app = state.apps[key];
-        app.pinyinName = pinyin.convertToPinyin(app.name, '', false);
-        return app;
-      });
+    .filter((x) => x !== "hz")
+    .map((key) => {
+      const app = state.apps[key];
+      app.pinyinName = pinyin.convertToPinyin(app.name, '', false);
+      return app;
+    });
 
     tmpApps.sort((a, b) => a.pinyinName.localeCompare(b.pinyinName));
 
@@ -53,6 +53,9 @@ export const StartMenu = () => {
       }
       allApps[firstLetter].push(app);
     });
+
+    // 确保contApps被正确初始化为一个数组
+    arr.contApps = Object.values(allApps);
 
     arr.contApps = allApps;
     arr.allApps = tmpApps;
