@@ -46,12 +46,13 @@ export const StartMenu = () => {
     }  
     
     for (i = 0; i < tmpApps.length; i++) {  
-      var t1 = tmpApps[i].name.trim().toUpperCase().charCodeAt(0);  
-      if (t1 > 64 && t1 < 91) {  
-        allApps[t1 - 64].push(tmpApps[i]);  
+      // 修改为根据拼音首字母进行分类
+      var firstLetter = pinyin.getFirstLetter(tmpApps[i].name).toUpperCase();
+      if (firstLetter >= 'A' && firstLetter <= 'Z') {  
+        allApps[firstLetter.charCodeAt(0) - 64].push(tmpApps[i]);  
       } else {  
         allApps[0].push(tmpApps[i]);  
-      }  
+      }
     }  
     
     arr.contApps = allApps;  
