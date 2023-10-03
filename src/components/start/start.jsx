@@ -15,56 +15,52 @@ try {
 }
 
 export const StartMenu = () => {
-  try {
-    const { align } = useSelector((state) => state.taskbar);
-    const start = useSelector((state) => {
-      const arr = state.startmenu;
-      let ln = (6 - (arr.pnApps.length % 6)) % 6;
+  const { align } = useSelector((state) => state.taskbar);
+  const start = useSelector((state) => {
+    const arr = state.startmenu;
+    let ln = (6 - (arr.pnApps.length % 6)) % 6;
 
-      for (let i = 0; i < ln; i++) {
-        arr.pnApps.push({
-          empty: true,
-        });
+    for (let i = 0; i < ln; i++) {
+      arr.pnApps.push({
+        empty: true,
+      });
+    }
+
+    arr.rcApps.forEach((app) => {
+      if (app.lastUsed < 0) {
+        app.lastUsed = "Recently Added";
+      } else if (app.lastUsed < 10) {
+        app.lastUsed = "Just Now";
+      } else if (app.lastUsed < 60) {
+        app.lastUsed += "m ago";
+      } else if (app.lastUsed < 360) {
+        app.lastUsed = Math.floor(app.lastUsed / 60) + "h ago";
       }
-
-      arr.rcApps.forEach((app) => {
-        if (app.lastUsed < 0) {
-          app.lastUsed = "Recently Added";
-        } else if (app.lastUsed < 10) {
-          app.lastUsed = "Just Now";
-        } else if (app.lastUsed < 60) {
-          app.lastUsed += "m ago";
-        } else if (app.lastUsed < 360) {
-          app.lastUsed = Math.floor(app.lastUsed / 60) + "h ago";
-        }
-      });
-
-      const allApps = {};
-      const tmpApps = Object.keys(state.apps)
-        .filter((x) => x !== "hz")
-        .map((key) => {
-          const app = state.apps[key];
-          app.pinyinName = pinyin.convertToPinyin(app.name, '', false);
-          return app;
-        });
-
-      tmpApps.sort((a, b) => a.pinyinName.localeCompare(b.pinyinName));
-
-      tmpApps.forEach((app) => {
-        const firstLetter = getFirstLetter(app.name);
-        if (!allApps[firstLetter]) {
-          allApps[firstLetter] = [];
-        }
-        allApps[firstLetter].push(app);
-      });
-
-      arr.contApps = allApps;
-      arr.allApps = tmpApps;
-      return arr;
     });
-  } catch (error) {
-    console.error("发生错误2：", error);
-  }
+
+    const allApps = {};
+    const tmpApps = Object.keys(state.apps)
+      .filter((x) => x !== "hz")
+      .map((key) => {
+        const app = state.apps[key];
+        app.pinyinName = pinyin.convertToPinyin(app.name, '', false);
+        return app;
+      });
+
+    tmpApps.sort((a, b) => a.pinyinName.localeCompare(b.pinyinName));
+
+    tmpApps.forEach((app) => {
+      const firstLetter = getFirstLetter(app.name);
+      if (!allApps[firstLetter]) {
+        allApps[firstLetter] = [];
+      }
+      allApps[firstLetter].push(app);
+    });
+
+    arr.contApps = allApps;
+    arr.allApps = tmpApps;
+    return arr;
+  });
 
   const [query, setQuery] = useState("");
   const [match, setMatch] = useState({});
