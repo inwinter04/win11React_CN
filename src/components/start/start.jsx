@@ -44,15 +44,19 @@ export const StartMenu = () => {
     for (i = 0; i < 27; i++) {
       allApps[i] = [];
     }
-  
-    for (i = 0; i < tmpApps.length; i++) {
-      // 修改为根据拼音首字母进行分类
-      var firstLetter = pinyin.getFirstLetter(tmpApps[i].name).toUpperCase();
-      if (firstLetter >= 'A' && firstLetter <= 'Z') {  
-        allApps[firstLetter.charCodeAt(0) - 64].push(tmpApps[i]);  
-      } else {  
-        allApps[0].push(tmpApps[i]);  
+
+    try {
+      for (i = 0; i < tmpApps.length; i++) {
+        // 修改为根据拼音首字母进行分类
+        var firstLetter = pinyin.getFirstLetter(tmpApps[i].name).toUpperCase();
+        if (firstLetter >= 'A' && firstLetter <= 'Z') {  
+          allApps[firstLetter.charCodeAt(0) - 64].push(tmpApps[i]);  
+        } else {  
+          allApps[0].push(tmpApps[i]);  
+        }
       }
+    } catch (error) {
+      console.error("发生错误：", error);
     }
   
     arr.contApps = allApps;
