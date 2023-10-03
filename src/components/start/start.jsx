@@ -3,67 +3,60 @@ import { useSelector, useDispatch } from "react-redux";
 import { Icon } from "../../utils/general";
 import pinyin from "tiny-pinyin";
 
+// 辅助函数：将中文字符串转换为拼音并提取首字母
+function getFirstLetter(str) {
+  const pinyinName = pinyin.convertToPinyin(str, '', false);
+  const firstLetter = pinyinName.charAt(0).toUpperCase();
+  return firstLetter >= 'A' && firstLetter <= 'Z' ? firstLetter : '#';
+}
+
 export const StartMenu = () => {
   const { align } = useSelector((state) => state.taskbar);
   const start = useSelector((state) => {
-    var arr = state.startmenu,
-      ln = (6 - (arr.pnApps.length % 6)) % 6;
-  
-    for (var i = 0; i < ln; i++) {
+    const arr = state.startmenu;
+    let ln = (6 - (arr.pnApps.length % 6)) % 6;
+
+    for (let i = 0; i < ln; i++) {
       arr.pnApps.push({
         empty: true,
       });
     }
-  
-    for (i = 0; i < arr.rcApps.length; i++) {
-      if (arr.rcApps[i].lastUsed < 0) {
-        arr.rcApps[i].lastUsed = "Recently Added";
-      } else if (arr.rcApps[i].lastUsed < 10) {
-        arr.rcApps[i].lastUsed = "Just Now";
-      } else if (arr.rcApps[i].lastUsed < 60) {
-        arr.rcApps[i].lastUsed += "m ago";
-      } else if (arr.rcApps[i].lastUsed < 360) {
-        arr.rcApps[i].lastUsed =
-          Math.floor(arr.rcApps[i].lastUsed / 60) + "h ago";
-      }
-    }
-  
-    var allApps = [],
-      tmpApps = Object.keys(state.apps)
-        .filter((x) => x != "hz")
-        .map((key) => {
-          const app = state.apps[key];
-          // 在映射过程中将应用程序名称转换为拼音
-          app.pinyinName = pinyin.convertToPinyin(app.name, '', false);
-          return app;
-        });
-  
-    // 然后根据拼音名称进行排序
-    tmpApps.sort((a, b) => a.pinyinName.localeCompare(b.pinyinName));
-  
-    for (i = 0; i < 27; i++) {
-      allApps[i] = [];
-    }
 
-    try {
-      for (i = 0; i < tmpApps.length; i++) {
-        // 修改为根据拼音首字母进行分类
-        var firstLetter = pinyin.getFirstLetter(tmpApps[i].name).toUpperCase();
-        if (firstLetter >= 'A' && firstLetter <= 'Z') {  
-          allApps[firstLetter.charCodeAt(0) - 64].push(tmpApps[i]);  
-        } else {  
-          allApps[0].push(tmpApps[i]);  
-        }
+    arr.rcApps.forEach((app) => {
+      if (app.lastUsed < 0) {
+        app.lastUsed = "Recently Added";
+      } else if (app.lastUsed < 10) {
+        app.lastUsed = "Just Now";
+      } else if (app.lastUsed < 60) {
+        app.lastUsed += "m ago";
+      } else if (app.lastUsed < 360) {
+        app.lastUsed = Math.floor(app.lastUsed / 60) + "h ago";
       }
-    } catch (error) {
-      console.error("发生错误：", error);
-    }
-  
+    });
+
+    const allApps = {};
+    const tmpApps = Object.keys(state.apps)
+      .filter((x) => x !== "hz")
+      .map((key) => {
+        const app = state.apps[key];
+        app.pinyinName = pinyin.convertToPinyin(app.name, '', false);
+        return app;
+      });
+
+    tmpApps.sort((a, b) => a.pinyinName.localeCompare(b.pinyinName));
+
+    tmpApps.forEach((app) => {
+      const firstLetter = getFirstLetter(app.name);
+      if (!allApps[firstLetter]) {
+        allApps[firstLetter] = [];
+      }
+      allApps[firstLetter].push(app);
+    });
+
     arr.contApps = allApps;
     arr.allApps = tmpApps;
     return arr;
   });
-  
 
   const [query, setQuery] = useState("");
   const [match, setMatch] = useState({});
