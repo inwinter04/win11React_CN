@@ -67,7 +67,8 @@ const apps = [
   {
     name: "此电脑",
     icon: "win/user",
-    type: "short",
+    type: "app",
+    action: "EXPLORER",
   },
   {
     name: "闹钟和时钟",
