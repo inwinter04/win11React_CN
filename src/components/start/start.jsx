@@ -1,61 +1,53 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Icon } from "../../utils/general";
-import pinyin from "tiny-pinyin";
-
-
-// 辅助函数：将中文字符串转换为拼音并提取首字母
-function getFirstLetter(str) {
-  const pinyinName = pinyin.convertToPinyin(str, '', false);
-  const firstLetter = pinyinName.charAt(0).toUpperCase();
-  return firstLetter >= 'A' && firstLetter <= 'Z' ? firstLetter : '#';
-}
 
 export const StartMenu = () => {
   const { align } = useSelector((state) => state.taskbar);
   const start = useSelector((state) => {
-    const arr = state.startmenu;
-    let ln = (6 - (arr.pnApps.length % 6)) % 6;
+    var arr = state.startmenu,
+      ln = (6 - (arr.pnApps.length % 6)) % 6;
 
-    for (let i = 0; i < ln; i++) {
+    for (var i = 0; i < ln; i++) {
       arr.pnApps.push({
         empty: true,
       });
     }
 
-    arr.rcApps.forEach((app) => {
-      if (app.lastUsed < 0) {
-        app.lastUsed = "Recently Added";
-      } else if (app.lastUsed < 10) {
-        app.lastUsed = "Just Now";
-      } else if (app.lastUsed < 60) {
-        app.lastUsed += "m ago";
-      } else if (app.lastUsed < 360) {
-        app.lastUsed = Math.floor(app.lastUsed / 60) + "h ago";
+    for (i = 0; i < arr.rcApps.length; i++) {
+      if (arr.rcApps[i].lastUsed < 0) {
+        arr.rcApps[i].lastUsed = "Recently Added";
+      } else if (arr.rcApps[i].lastUsed < 10) {
+        arr.rcApps[i].lastUsed = "Just Now";
+      } else if (arr.rcApps[i].lastUsed < 60) {
+        arr.rcApps[i].lastUsed += "m ago";
+      } else if (arr.rcApps[i].lastUsed < 360) {
+        arr.rcApps[i].lastUsed =
+          Math.floor(arr.rcApps[i].lastUsed / 60) + "h ago";
       }
-    });
+    }
 
-    const allApps = {};
-    const tmpApps = Object.keys(state.apps)
-    .filter((x) => x !== "hz")
-    .map((key) => {
-      const app = state.apps[key];
-      app.pinyinName = pinyin.convertToPinyin(app.name, '', false);
-      return app;
-    });
+    var allApps = [],
+      tmpApps = Object.keys(state.apps)
+        .filter((x) => x != "hz")
+        .map((key) => {
+          return state.apps[key];
+        });
 
-    tmpApps.sort((a, b) => a.pinyinName.localeCompare(b.pinyinName));
+    tmpApps.sort((a, b) => (a.name > b.name ? 1 : b.name > a.name ? -1 : 0));
 
-    tmpApps.forEach((app) => {
-      const firstLetter = getFirstLetter(app.name);
-      if (!allApps[firstLetter]) {
-        allApps[firstLetter] = [];
+    for (i = 0; i < 27; i++) {
+      allApps[i] = [];
+    }
+
+    for (i = 0; i < tmpApps.length; i++) {
+      var t1 = tmpApps[i].name.trim().toUpperCase().charCodeAt(0);
+      if (t1 > 64 && t1 < 91) {
+        allApps[t1 - 64].push(tmpApps[i]);
+      } else {
+        allApps[0].push(tmpApps[i]);
       }
-      allApps[firstLetter].push(app);
-    });
-
-    // 确保contApps被正确初始化为一个数组
-    arr.contApps = Object.values(allApps);
+    }
 
     arr.contApps = allApps;
     arr.allApps = tmpApps;
@@ -270,12 +262,12 @@ export const StartMenu = () => {
           <div className="menuBar">
             <div className="profile handcr">
               <Icon
-                src="prof"
+                src="blueProf"
                 ui
                 rounded
                 width={26}
                 click="EXTERNAL"
-                payload="https://blueedge.me/"
+                payload="https://blueedge.me"
               />
               <div className="usName">{userName}</div>
             </div>
