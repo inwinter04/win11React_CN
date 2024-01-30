@@ -134,6 +134,20 @@ export const Settings = () => {
                                 </div>
                               </div>
                               <div className="right">
+                                <div className="column">
+                                  <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/2/25/Microsoft_icon.svg"
+                                    height={20}
+                                    alt=""
+                                  />
+                                  <p>
+                                    Microsoft 365
+                                    <br />
+                                    <span className="column_lower">
+                                      View benefits
+                                    </span>
+                                  </p>
+                                </div>
                                 <div
                                   className="column"
                                   onClick={() => setPage("Windows 更新")}
@@ -180,7 +194,7 @@ export const Settings = () => {
                                 <div>
                                   <h3>数据使用量</h3>
                                   <p>
-                                    {Math.round(Math.random() * 100)}GB, last 30
+                                    {Math.round(Math.random() * 100)}GB, 过去30天
                                     days
                                   </p>
                                 </div>
