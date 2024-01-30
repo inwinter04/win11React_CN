@@ -81,28 +81,28 @@ export const BandPane = () => {
     >
       <div className="bandContainer">
         <Icon
-            className="hvlight"
-            width={17}
-            click="CALCUAPP"
-            payload="togg"
-            open="true"
-            src="calculator"
-          />
-          <Icon
-            className="hvlight"
-            width={17}
-            click="SPOTIFY"
-            payload="togg"
-            open="true"
-            src="spotify"
-          />
-          <Icon
-            className="hvlight"
-            width={17}
-            click="NOTEPAD"
-            payload="togg"
-            src="notepad"
-          />
+          className="hvlight"
+          width={17}
+          click="CALCUAPP"
+          payload="togg"
+          open="true"
+          src="calculator"
+        />
+        <Icon
+          className="hvlight"
+          width={17}
+          click="SPOTIFY"
+          payload="togg"
+          open="true"
+          src="spotify"
+        />
+        <Icon
+          className="hvlight"
+          width={17}
+          click="NOTEPAD"
+          payload="togg"
+          src="notepad"
+        />
       </div>
     </div>
   );
@@ -150,7 +150,7 @@ export const SidePane = () => {
   function sliderBackground(elem, e) {
     elem.style.setProperty(
       "--track-color",
-      `linear-gradient(90deg, var(--clrPrm) ${e - 3}%, #888888 ${e}%)`
+      `linear-gradient(90deg, var(--clrPrm) ${e - 3}%, #888888 ${e}%)`,
     );
   }
 
@@ -179,7 +179,7 @@ export const SidePane = () => {
       },
     });
     sliderBackground(bSlider, brgt);
-  };
+  }
 
   useEffect(() => {
     sidepane.quicks.map((item, i) => {
