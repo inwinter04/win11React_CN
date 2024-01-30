@@ -144,7 +144,7 @@ export const Settings = () => {
                                     Microsoft 365
                                     <br />
                                     <span className="column_lower">
-                                      View benefits
+                                      浏览优势
                                     </span>
                                   </p>
                                 </div>
@@ -153,7 +153,7 @@ export const Settings = () => {
                                   onClick={() => setPage("Windows 更新")}
                                 >
                                   <img
-                                    src="img/settings/Windows Update.webp"
+                                    src="img/settings/Windows 更新.webp"
                                     alt=""
                                     height={20}
                                   />
