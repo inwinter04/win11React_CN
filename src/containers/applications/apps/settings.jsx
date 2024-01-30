@@ -13,7 +13,7 @@ export const Settings = () => {
 
   const wall = useSelector((state) => state.wallpaper);
 
-  const [page, setPage] = useState("System"); // default System
+  const [page, setPage] = useState("系统"); // default System
   const [nav, setNav] = useState("");
   const [updating, setUpdating] = useState(false);
   const [upmodalOpen, setUpmodalOpen] = useState(false);

@@ -226,6 +226,11 @@ const apps = [
     type: "app",
   },
   {
+    name: "To Do",
+    icon: "todo",
+    type: "app",
+  },
+  {
     name: "地图",
     icon: "maps",
     type: "app",
