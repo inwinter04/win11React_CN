@@ -195,7 +195,6 @@ export const Settings = () => {
                                   <h3>数据使用量</h3>
                                   <p>
                                     {Math.round(Math.random() * 100)}GB, 过去30天
-                                    days
                                   </p>
                                 </div>
                               </div>
