@@ -13,7 +13,7 @@ export const Settings = () => {
 
   const wall = useSelector((state) => state.wallpaper);
 
-  const [page, setPage] = useState("System"); // default System
+  const [page, setPage] = useState("系统"); // default System
   const [nav, setNav] = useState("");
   const [updating, setUpdating] = useState(false);
   const [upmodalOpen, setUpmodalOpen] = useState(false);
@@ -134,12 +134,26 @@ export const Settings = () => {
                                 </div>
                               </div>
                               <div className="right">
+                                <div className="column">
+                                  <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/2/25/Microsoft_icon.svg"
+                                    height={20}
+                                    alt=""
+                                  />
+                                  <p>
+                                    Microsoft 365
+                                    <br />
+                                    <span className="column_lower">
+                                      浏览优势
+                                    </span>
+                                  </p>
+                                </div>
                                 <div
                                   className="column"
                                   onClick={() => setPage("Windows 更新")}
                                 >
                                   <img
-                                    src="img/settings/Windows Update.webp"
+                                    src="img/settings/Windows 更新.webp"
                                     alt=""
                                     height={20}
                                   />
@@ -180,8 +194,7 @@ export const Settings = () => {
                                 <div>
                                   <h3>数据使用量</h3>
                                   <p>
-                                    {Math.round(Math.random() * 100)}GB, last 30
-                                    days
+                                    {Math.round(Math.random() * 100)}GB, 过去30天
                                   </p>
                                 </div>
                               </div>

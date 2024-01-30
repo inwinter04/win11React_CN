@@ -41,7 +41,7 @@ export const Icon = (props) => {
 
   const clickDispatch = (event) => {
     if (!sidepane.banhide) dispatch({ type: "BANDHIDE" });
-    
+
     var action = {
       type: event.currentTarget.dataset.action,
       payload: event.currentTarget.dataset.payload,

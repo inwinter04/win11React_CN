@@ -72,9 +72,9 @@ const settReducer = (state = defState, action) => {
       tmpState = changeVal(tmpState, action.payload.path, action.payload.value);
       break;
     case "SETTLOAD":
-	  changed = true;
+      changed = true;
       tmpState = { ...action.payload };
-	  break;
+      break;
     case "TOGGAIRPLNMD":
       changed = true;
       const airPlaneModeStatus = tmpState.network.airplane;
