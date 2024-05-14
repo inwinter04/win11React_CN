@@ -76,7 +76,7 @@
           },
           "Blue": {
             "type": "folder",
-            "name": "´ËµçÄÔ",
+            "name": "blue",
             "info": {
               "spid": "%user%",
               "icon": "user"
