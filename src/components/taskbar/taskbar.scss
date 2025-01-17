@@ -157,3 +157,8 @@ body[data-theme="dark"] {
     transform: scale(1);
   }
 }
+
+.taskIcon,
+.searchIcon img {
+  filter: invert(0);
+}
