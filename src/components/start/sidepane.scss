@@ -52,9 +52,9 @@ body[data-theme="dark"] .bandpane {
 }
 
 .sidePane {
-  --bg1: rgb(243 243 243 / 85%);
-  --bg2: rgb(251 251 251 / 95%);
-  --bg3: rgb(242 242 242);
+  --bg1: #dae2f2;
+  --bg2: #e6edf8;
+  --bg3: #fbfbfb;
   --bg4: rgb(0 0 0 / 5%);
   --sliderThumbClr: white;
 
@@ -106,23 +106,13 @@ body[data-theme="dark"] .bandpane {
           display: flex;
           align-items: center;
           justify-content: center;
+          border-bottom-color: rgba(0, 0, 0, 0.2);
           background: var(--bg3);
+          border: solid 0.1px rgba(17, 17, 17, 0.1);
           transition: all 0.1s ease;
 
           &[data-state="true"] {
             background: var(--clrPrm);
-            .uicon img {
-              filter: brightness(0) invert(1);
-            }
-          }
-
-          &:hover {
-            background: var(--bg4);
-          }
-
-          &[data-state="true"]:hover {
-            background: var(--clrPrm);
-            filter: brightness(0.9);
           }
         }
 
@@ -221,8 +211,8 @@ body[data-theme="dark"] .bandpane {
 body[data-theme="dark"] .sidePane {
   --bg1: #1c1c1c;
   --bg2: #242424;
-  --bg3: rgb(255 255 255 / 5%);
-  --bg4: rgb(255 255 255 / 10%);
+  --bg3: #313131;
+  --bg4: rgb(255 255 255 / 5%);
   --sliderThumbClr: #454545;
 
   &.bd-blur {
@@ -232,30 +222,6 @@ body[data-theme="dark"] .sidePane {
 
   .uicon {
     filter: invert(1);
-  }
-
-  .quickSettings {
-    .qkCont {
-      .qkGrp {
-        .qkbtn {
-          &[data-state="true"] {
-            background: var(--clrPrm);
-            .uicon img {
-              filter: brightness(0) invert(1);
-            }
-          }
-
-          &:hover {
-            background: var(--bg4);
-          }
-
-          &[data-state="true"]:hover {
-            background: var(--clrPrm);
-            filter: brightness(1.1);
-          }
-        }
-      }
-    }
   }
 }
 
