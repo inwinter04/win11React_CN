@@ -105,6 +105,12 @@ input::selection {
 img[data-invert="true"],
 svg[data-invert="true"],
 i[data-invert="true"] {
+  filter: invert(0);
+}
+
+body[data-theme="dark"] img[data-invert="true"],
+body[data-theme="dark"] svg[data-invert="true"],
+body[data-theme="dark"] i[data-invert="true"] {
   filter: invert(1);
 }
 
