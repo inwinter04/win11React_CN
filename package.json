@@ -36,7 +36,7 @@
     "redux": "^4.2.1",
     "sass": "^1.68.0",
     "tiny-pinyin": "^1.3.2",
-    "translation-check": "^1.0.3"
+    "translation-check": "^1.1.1"
   },
   "scripts": {
     "start": "vite",
