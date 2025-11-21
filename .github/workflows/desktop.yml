@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - uses: actions/setup-node@v4
         with:
@@ -38,7 +38,7 @@ jobs:
     env:
       CI: false
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: setup node
         uses: actions/setup-node@v4
         with:
