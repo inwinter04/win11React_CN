@@ -6,7 +6,7 @@
   "private": true,
   "dependencies": {
     "-": "^0.0.1",
-    "@crowdin/cli": "^3.19.2",
+    "@crowdin/cli": "^4.12.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
