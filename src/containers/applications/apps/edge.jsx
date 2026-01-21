@@ -25,6 +25,13 @@ export const EdgeMenu = () => {
   };
 
   const isValidURL = (string) => {
+    // 检查是否为 IP 地址 (IPv4)
+    const ipPattern = /^(https?:\/\/)?((\d{1,3}\.){3}\d{1,3})(:\d+)?(\/.*)?$/;
+    if (ipPattern.test(string)) {
+      return true;
+    }
+
+    // 检查是否为域名
     var res = string.match(
       /(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g,
     );
