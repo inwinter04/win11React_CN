@@ -8,6 +8,9 @@ const config = ({ mode }) => {
       react(),
       VitePWA({
         registerType: "autoUpdate",
+        workbox: {
+          maximumFileSizeToCacheInBytes: 3 * 1024 * 1024, // 3MB
+        },
       }),
     ],
     base: "",
@@ -16,10 +19,22 @@ const config = ({ mode }) => {
     },
     build: {
       outDir: "build",
+      chunkSizeWarningLimit: 1000,
       rollupOptions: {
         output: {
           manualChunks: (id) => {
-            return "vendor";
+            if (id.includes('node_modules')) {
+              if (id.includes('firebase')) {
+                return 'firebase';
+              }
+              if (id.includes('react') || id.includes('redux')) {
+                return 'react-vendor';
+              }
+              if (id.includes('@fortawesome')) {
+                return 'icons';
+              }
+              return 'vendor';
+            }
           },
         },
       },
