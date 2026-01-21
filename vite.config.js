@@ -23,17 +23,23 @@ const config = ({ mode }) => {
       rollupOptions: {
         output: {
           manualChunks: (id) => {
-            if (id.includes('node_modules')) {
-              if (id.includes('firebase')) {
-                return 'firebase';
+            if (id.includes("node_modules")) {
+              if (id.includes("firebase")) {
+                return "firebase";
               }
-              if (id.includes('react') || id.includes('redux')) {
-                return 'react-vendor';
+              if (id.includes("react-dom") || id.includes("react-dom/client")) {
+                return "react-dom";
               }
-              if (id.includes('@fortawesome')) {
-                return 'icons';
+              if (id.includes("react")) {
+                return "react-core";
               }
-              return 'vendor';
+              if (id.includes("redux") || id.includes("react-redux")) {
+                return "redux";
+              }
+              if (id.includes("@fortawesome")) {
+                return "icons";
+              }
+              return "vendor";
             }
           },
         },
